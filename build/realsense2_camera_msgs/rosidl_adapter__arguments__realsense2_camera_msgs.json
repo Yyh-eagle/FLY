@@ -1,0 +1,9 @@
+{
+  "package_name": "realsense2_camera_msgs",
+  "non_idl_tuples": [
+    "/home/yyh/ros2_ws/src/realsense-ros-4.51.1/realsense2_camera_msgs:msg/IMUInfo.msg",
+    "/home/yyh/ros2_ws/src/realsense-ros-4.51.1/realsense2_camera_msgs:msg/Extrinsics.msg",
+    "/home/yyh/ros2_ws/src/realsense-ros-4.51.1/realsense2_camera_msgs:msg/Metadata.msg",
+    "/home/yyh/ros2_ws/src/realsense-ros-4.51.1/realsense2_camera_msgs:srv/DeviceInfo.srv"
+  ]
+}

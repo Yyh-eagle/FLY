@@ -1,0 +1,1 @@
+/home/yyh/ros2_ws/src/yolov5_ros2/launch/yolov5_ros2.launch.py

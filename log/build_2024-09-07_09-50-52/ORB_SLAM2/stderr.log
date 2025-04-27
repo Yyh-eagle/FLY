@@ -1,0 +1,13 @@
+Build type: Release
+CMake Error at CMakeLists.txt:20 (find_package):
+  Could not find a configuration file for package "OpenCV" that is compatible
+  with requested version "2.4.10".
+
+  The following configuration files were considered but not accepted:
+
+    /usr/local/share/OpenCV/OpenCVConfig.cmake, version: 3.4.15
+    /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake, version: 4.2.0
+    /lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake, version: 4.2.0
+
+
+

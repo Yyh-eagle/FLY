@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from learning_interface/msg/MyState.msg
+// generated code does not contain a copyright notice
+
+
+module learning_interface {
+  module msg {
+    struct MyState {
+      int32 a;
+
+      int32 b;
+    };
+  };
+};

@@ -1,0 +1,23 @@
+[3.358s] Invoking command in '/home/yyh/ros2_ws/src/yyh_object': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_object/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_object build --build-base /home/yyh/ros2_ws/build/yyh_object/build install --record /home/yyh/ros2_ws/build/yyh_object/install.log --single-version-externally-managed install_data
+[4.729s] running egg_info
+[4.753s] writing ../../build/yyh_object/yyh_object.egg-info/PKG-INFO
+[4.753s] writing dependency_links to ../../build/yyh_object/yyh_object.egg-info/dependency_links.txt
+[4.753s] writing entry points to ../../build/yyh_object/yyh_object.egg-info/entry_points.txt
+[4.756s] writing requirements to ../../build/yyh_object/yyh_object.egg-info/requires.txt
+[4.756s] writing top-level names to ../../build/yyh_object/yyh_object.egg-info/top_level.txt
+[11.199s] writing manifest file '../../build/yyh_object/yyh_object.egg-info/SOURCES.txt'
+[11.199s] running build
+[11.199s] running build_py
+[11.199s] copying yyh_object/yolo_function.py -> /home/yyh/ros2_ws/build/yyh_object/build/lib/yyh_object
+[11.200s] running install
+[11.206s] running install_lib
+[11.220s] copying /home/yyh/ros2_ws/build/yyh_object/build/lib/yyh_object/yolo_function.py -> /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object
+[11.221s] byte-compiling /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object/yolo_function.py to yolo_function.cpython-38.pyc
+[11.222s] running install_data
+[11.222s] running install_egg_info
+[11.236s] removing '/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object-0.0.0-py3.8.egg-info' (and everything under it)
+[11.239s] Copying ../../build/yyh_object/yyh_object.egg-info to /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object-0.0.0-py3.8.egg-info
+[11.240s] running install_scripts
+[11.291s] Installing image script to /home/yyh/ros2_ws/install/yyh_object/lib/yyh_object
+[11.291s] writing list of installed files to '/home/yyh/ros2_ws/build/yyh_object/install.log'
+[11.328s] Invoked command in '/home/yyh/ros2_ws/src/yyh_object' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_object/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_object build --build-base /home/yyh/ros2_ws/build/yyh_object/build install --record /home/yyh/ros2_ws/build/yyh_object/install.log --single-version-externally-managed install_data

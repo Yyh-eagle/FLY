@@ -1,0 +1,21 @@
+[2.490s] Invoking command in '/home/yyh/ros2_ws/src/yolov5_ros2': PYTHONPATH=/home/yyh/ros2_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolov5_ros2 build --build-base /home/yyh/ros2_ws/build/yolov5_ros2/build install --record /home/yyh/ros2_ws/build/yolov5_ros2/install.log --single-version-externally-managed install_data
+[3.170s] running egg_info
+[3.195s] writing ../../build/yolov5_ros2/yolov5_ros2.egg-info/PKG-INFO
+[3.195s] writing dependency_links to ../../build/yolov5_ros2/yolov5_ros2.egg-info/dependency_links.txt
+[3.196s] writing entry points to ../../build/yolov5_ros2/yolov5_ros2.egg-info/entry_points.txt
+[3.196s] writing requirements to ../../build/yolov5_ros2/yolov5_ros2.egg-info/requires.txt
+[3.196s] writing top-level names to ../../build/yolov5_ros2/yolov5_ros2.egg-info/top_level.txt
+[15.479s] reading manifest file '../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[15.480s] writing manifest file '../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[15.480s] running build
+[15.480s] running build_py
+[15.480s] running install
+[15.487s] running install_lib
+[15.508s] running install_data
+[15.509s] running install_egg_info
+[15.527s] removing '/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages/yolov5_ros2-0.0.0-py3.8.egg-info' (and everything under it)
+[15.527s] Copying ../../build/yolov5_ros2/yolov5_ros2.egg-info to /home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages/yolov5_ros2-0.0.0-py3.8.egg-info
+[15.527s] running install_scripts
+[15.620s] Installing yolo_detect_2d script to /home/yyh/ros2_ws/install/yolov5_ros2/lib/yolov5_ros2
+[15.620s] writing list of installed files to '/home/yyh/ros2_ws/build/yolov5_ros2/install.log'
+[15.714s] Invoked command in '/home/yyh/ros2_ws/src/yolov5_ros2' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolov5_ros2 build --build-base /home/yyh/ros2_ws/build/yolov5_ros2/build install --record /home/yyh/ros2_ws/build/yolov5_ros2/install.log --single-version-externally-managed install_data

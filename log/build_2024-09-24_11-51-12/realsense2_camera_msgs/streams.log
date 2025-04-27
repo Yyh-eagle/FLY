@@ -1,0 +1,30 @@
+[0.131s] Invoking command in '/home/yyh/ros2_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/opt/ros/foxy /usr/bin/cmake --build /home/yyh/ros2_ws/build/realsense2_camera_msgs -- -j4 -l4
+[0.785s] [  1%] Built target realsense2_camera_msgs__cpp
+[0.905s] [ 12%] Built target realsense2_camera_msgs__rosidl_generator_c
+[0.937s] [ 23%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp
+[0.960s] [ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp
+[0.973s] [ 45%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[1.054s] [ 56%] Built target realsense2_camera_msgs__rosidl_typesupport_c
+[1.081s] [ 67%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c
+[1.208s] [ 78%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c
+[1.276s] [ 78%] Built target realsense2_camera_msgs
+[1.361s] [ 80%] Built target realsense2_camera_msgs__py
+[1.454s] [35m[1mScanning dependencies of target realsense2_camera_msgs__python[0m
+[1.697s] [ 81%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__python.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_extrinsics_s.c.o[0m
+[1.706s] [ 83%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__python.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_metadata_s.c.o[0m
+[1.706s] [ 85%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__python.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_device_info_s.c.o[0m
+[1.709s] [ 87%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__python.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_imu_info_s.c.o[0m
+[2.711s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/librealsense2_camera_msgs__python.so[0m
+[2.958s] [ 89%] Built target realsense2_camera_msgs__python
+[2.987s] [35m[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.992s] [35m[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_c__pyext[0m
+[2.997s] [35m[1mScanning dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[3.003s] [ 90%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.005s] [ 92%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[3.021s] [ 94%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.074s] [ 96%] [32m[1mLinking CXX shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[3.097s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[3.113s] [100%] [32m[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[3.126s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext
+[3.144s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[3.320s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext

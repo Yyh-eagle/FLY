@@ -1,0 +1,35 @@
+[1.907s] Invoking command in '/home/yyh/ros2_ws/build/yolov5_ros2': PYTHONPATH=/home/yyh/ros2_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yyh/ros2_ws/build/yolov5_ros2/build --no-deps symlink_data --force
+[2.476s] running develop
+[2.491s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.491s]   warnings.warn(
+[2.775s] running egg_info
+[2.792s] writing yolov5_ros2.egg-info/PKG-INFO
+[2.792s] writing dependency_links to yolov5_ros2.egg-info/dependency_links.txt
+[2.793s] writing entry points to yolov5_ros2.egg-info/entry_points.txt
+[2.793s] writing requirements to yolov5_ros2.egg-info/requires.txt
+[2.794s] writing top-level names to yolov5_ros2.egg-info/top_level.txt
+[10.176s] writing manifest file 'yolov5_ros2.egg-info/SOURCES.txt'
+[10.256s] running build_ext
+[10.256s] Creating /home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages/yolov5-ros2.egg-link (link to .)
+[10.256s] Installing yolo_detect_2d script to /home/yyh/ros2_ws/install/yolov5_ros2/lib/yolov5_ros2
+[10.256s] 
+[10.256s] Installed /home/yyh/ros2_ws/build/yolov5_ros2
+[10.256s] running symlink_data
+[10.257s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/resource/yolov5_ros2 -> /home/yyh/ros2_ws/install/yolov5_ros2/share/ament_index/resource_index/packages
+[10.257s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/package.xml -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2
+[10.257s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/launch/yolov5_ros2.launch.py -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/launch
+[10.257s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/best_8_1_2.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.260s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/best_landing1.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/best_plus.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/best_landing2.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/best_8_1.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/best_landing_gray.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/best_7_31.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/yolov5s.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/camera_info.yaml -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/last_plus1.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/config/last.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/resource/yolov5_ros2 -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/resource
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/resource/fish.jpg -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/resource
+[10.261s] symbolically linking /home/yyh/ros2_ws/build/yolov5_ros2/resource/mouse.png -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/resource
+[10.363s] Invoked command in '/home/yyh/ros2_ws/build/yolov5_ros2' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yyh/ros2_ws/build/yolov5_ros2/build --no-deps symlink_data --force

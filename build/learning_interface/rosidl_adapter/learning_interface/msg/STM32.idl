@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from learning_interface/msg/STM32.msg
+// generated code does not contain a copyright notice
+
+
+module learning_interface {
+  module msg {
+    struct STM32 {
+      @verbatim (language="comment", text=
+        " 表示是否到达")
+      int32 ifarrive;
+
+      @verbatim (language="comment", text=
+        " 表示小任务的id")
+      int32 id;
+
+      @verbatim (language="comment", text=
+        " 表示大任务的id")
+      int32 state;
+
+      @verbatim (language="comment", text=
+        " 表示D435i的角度")
+      float yaw;
+    };
+  };
+};

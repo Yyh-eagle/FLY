@@ -1,0 +1,21 @@
+[1.849s] Invoking command in '/home/yyh/ros2_ws/src/yyh_nav': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_nav build --build-base /home/yyh/ros2_ws/build/yyh_nav/build install --record /home/yyh/ros2_ws/build/yyh_nav/install.log --single-version-externally-managed install_data
+[2.344s] running egg_info
+[2.360s] writing ../../build/yyh_nav/yyh_nav.egg-info/PKG-INFO
+[2.361s] writing dependency_links to ../../build/yyh_nav/yyh_nav.egg-info/dependency_links.txt
+[2.361s] writing entry points to ../../build/yyh_nav/yyh_nav.egg-info/entry_points.txt
+[2.361s] writing requirements to ../../build/yyh_nav/yyh_nav.egg-info/requires.txt
+[2.361s] writing top-level names to ../../build/yyh_nav/yyh_nav.egg-info/top_level.txt
+[2.863s] reading manifest file '../../build/yyh_nav/yyh_nav.egg-info/SOURCES.txt'
+[2.864s] writing manifest file '../../build/yyh_nav/yyh_nav.egg-info/SOURCES.txt'
+[2.865s] running build
+[2.865s] running build_py
+[2.866s] running install
+[2.877s] running install_lib
+[2.907s] running install_data
+[2.908s] running install_egg_info
+[2.932s] removing '/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages/yyh_nav-0.0.0-py3.8.egg-info' (and everything under it)
+[2.932s] Copying ../../build/yyh_nav/yyh_nav.egg-info to /home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages/yyh_nav-0.0.0-py3.8.egg-info
+[2.932s] running install_scripts
+[2.998s] Installing tft265 script to /home/yyh/ros2_ws/install/yyh_nav/lib/yyh_nav
+[2.998s] writing list of installed files to '/home/yyh/ros2_ws/build/yyh_nav/install.log'
+[3.070s] Invoked command in '/home/yyh/ros2_ws/src/yyh_nav' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_nav build --build-base /home/yyh/ros2_ws/build/yyh_nav/build install --record /home/yyh/ros2_ws/build/yyh_nav/install.log --single-version-externally-managed install_data

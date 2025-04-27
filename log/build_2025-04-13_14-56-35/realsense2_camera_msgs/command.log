@@ -1,0 +1,2 @@
+Invoking command in '/home/yyh/ros2_ws/build/realsense2_camera_msgs': /usr/bin/cmake /home/yyh/ros2_ws/src/realsense-ros-4.51.1/realsense2_camera_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yyh/ros2_ws/install/realsense2_camera_msgs
+Invoked command in '/home/yyh/ros2_ws/build/realsense2_camera_msgs' returned '1': /usr/bin/cmake /home/yyh/ros2_ws/src/realsense-ros-4.51.1/realsense2_camera_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yyh/ros2_ws/install/realsense2_camera_msgs

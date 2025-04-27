@@ -1,0 +1,30 @@
+[0.019s] Invoking command in '/home/yyh/ros2_ws/build/ORB_SLAM2': /usr/bin/cmake /home/yyh/ros2_ws/src/ORB_SLAM2-master -DCMAKE_INSTALL_PREFIX=/home/yyh/ros2_ws/install/ORB_SLAM2
+[0.160s] -- The C compiler identification is GNU 9.4.0
+[0.278s] -- The CXX compiler identification is GNU 9.4.0
+[0.286s] -- Check for working C compiler: /usr/bin/cc
+[0.357s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.359s] -- Detecting C compiler ABI info
+[0.419s] -- Detecting C compiler ABI info - done
+[0.433s] -- Detecting C compile features
+[0.433s] -- Detecting C compile features - done
+[0.436s] -- Check for working CXX compiler: /usr/bin/c++
+[0.503s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.505s] -- Detecting CXX compiler ABI info
+[0.586s] -- Detecting CXX compiler ABI info - done
+[0.604s] -- Detecting CXX compile features
+[0.605s] -- Detecting CXX compile features - done
+[0.605s] Build type: Release
+[0.619s] CMake Error at CMakeLists.txt:20 (find_package):
+[0.619s]   Could not find a configuration file for package "OpenCV" that is compatible
+[0.619s]   with requested version "2.4.10".
+[0.619s] 
+[0.619s]   The following configuration files were considered but not accepted:
+[0.619s] 
+[0.619s]     /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake, version: 4.2.0
+[0.619s]     /lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake, version: 4.2.0
+[0.620s] 
+[0.620s] 
+[0.620s] 
+[0.620s] -- Configuring incomplete, errors occurred!
+[0.620s] See also "/home/yyh/ros2_ws/build/ORB_SLAM2/CMakeFiles/CMakeOutput.log".
+[0.624s] Invoked command in '/home/yyh/ros2_ws/build/ORB_SLAM2' returned '1': /usr/bin/cmake /home/yyh/ros2_ws/src/ORB_SLAM2-master -DCMAKE_INSTALL_PREFIX=/home/yyh/ros2_ws/install/ORB_SLAM2

@@ -1,0 +1,1 @@
+/home/yyh/ros2_ws/build/learning_interface/rosidl_typesupport_introspection_c/learning_interface/srv/detail/add_two_ints__rosidl_typesupport_introspection_c.h

@@ -1,0 +1,11 @@
+{
+  "package_name": "learning_interface",
+  "non_idl_tuples": [
+    "/home/yyh/ros2_ws/src/learning_interface:msg/ObjectPosition.msg",
+    "/home/yyh/ros2_ws/src/learning_interface:msg/MyState.msg",
+    "/home/yyh/ros2_ws/src/learning_interface:msg/STM32.msg",
+    "/home/yyh/ros2_ws/src/learning_interface:srv/AddTwoInts.srv",
+    "/home/yyh/ros2_ws/src/learning_interface:srv/GetObjectPosition.srv",
+    "/home/yyh/ros2_ws/src/learning_interface:action/MoveCircle.action"
+  ]
+}

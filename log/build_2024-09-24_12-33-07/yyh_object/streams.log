@@ -1,0 +1,44 @@
+[3.594s] Invoking command in '/home/yyh/ros2_ws/src/yyh_object': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_object/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_object build --build-base /home/yyh/ros2_ws/build/yyh_object/build install --record /home/yyh/ros2_ws/build/yyh_object/install.log --install-scripts $base/lib/yyh_object --single-version-externally-managed install_data
+[4.264s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/dist.py:452: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[4.264s] !!
+[4.264s] 
+[4.264s]         ********************************************************************************
+[4.265s]         Usage of dash-separated 'script-dir' will not be supported in future
+[4.265s]         versions. Please use the underscore name 'script_dir' instead.
+[4.265s] 
+[4.265s]         By 2024-Sep-26, you need to update your project and remove deprecated calls
+[4.265s]         or your builds will no longer be supported.
+[4.265s] 
+[4.265s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[4.265s]         ********************************************************************************
+[4.265s] 
+[4.265s] !!
+[4.265s]   opt = self.warn_dash_deprecation(opt, section)
+[4.294s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[4.294s]   warnings.warn(msg)
+[4.625s] running egg_info
+[4.731s] writing ../../build/yyh_object/yyh_object.egg-info/PKG-INFO
+[4.732s] writing dependency_links to ../../build/yyh_object/yyh_object.egg-info/dependency_links.txt
+[4.732s] writing entry points to ../../build/yyh_object/yyh_object.egg-info/entry_points.txt
+[4.732s] writing requirements to ../../build/yyh_object/yyh_object.egg-info/requires.txt
+[4.732s] writing top-level names to ../../build/yyh_object/yyh_object.egg-info/top_level.txt
+[5.269s] reading manifest file '../../build/yyh_object/yyh_object.egg-info/SOURCES.txt'
+[5.277s] writing manifest file '../../build/yyh_object/yyh_object.egg-info/SOURCES.txt'
+[5.280s] running build
+[5.281s] running build_py
+[5.287s] copying yyh_object/__init__.py -> /home/yyh/ros2_ws/build/yyh_object/build/lib/yyh_object
+[5.288s] copying yyh_object/usb_pub.py -> /home/yyh/ros2_ws/build/yyh_object/build/lib/yyh_object
+[5.289s] copying yyh_object/Image.py -> /home/yyh/ros2_ws/build/yyh_object/build/lib/yyh_object
+[5.290s] running install
+[5.311s] running install_lib
+[5.396s] running install_data
+[5.400s] copying resource/yyh_object -> /home/yyh/ros2_ws/install/yyh_object/share/ament_index/resource_index/packages
+[5.400s] copying package.xml -> /home/yyh/ros2_ws/install/yyh_object/share/yyh_object
+[5.404s] running install_egg_info
+[5.466s] removing '/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object-0.0.0-py3.8.egg-info' (and everything under it)
+[5.466s] Copying ../../build/yyh_object/yyh_object.egg-info to /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object-0.0.0-py3.8.egg-info
+[5.467s] running install_scripts
+[5.580s] Installing Image script to /home/yyh/ros2_ws/install/yyh_object/lib/yyh_object
+[5.582s] Installing usb_pub script to /home/yyh/ros2_ws/install/yyh_object/lib/yyh_object
+[5.583s] writing list of installed files to '/home/yyh/ros2_ws/build/yyh_object/install.log'
+[5.735s] Invoked command in '/home/yyh/ros2_ws/src/yyh_object' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_object/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_object build --build-base /home/yyh/ros2_ws/build/yyh_object/build install --record /home/yyh/ros2_ws/build/yyh_object/install.log --install-scripts $base/lib/yyh_object --single-version-externally-managed install_data

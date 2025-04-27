@@ -1,0 +1,33 @@
+[1.291s] Invoking command in '/home/yyh/ros2_ws/src/yolov5_ros2': PYTHONPATH=/home/yyh/ros2_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolov5_ros2 build --build-base /home/yyh/ros2_ws/build/yolov5_ros2/build install --record /home/yyh/ros2_ws/build/yolov5_ros2/install.log --single-version-externally-managed install_data
+[1.478s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.478s]   warnings.warn(msg)
+[1.603s] running egg_info
+[1.623s] writing ../../build/yolov5_ros2/yolov5_ros2.egg-info/PKG-INFO
+[1.624s] writing dependency_links to ../../build/yolov5_ros2/yolov5_ros2.egg-info/dependency_links.txt
+[1.624s] writing entry points to ../../build/yolov5_ros2/yolov5_ros2.egg-info/entry_points.txt
+[1.624s] writing requirements to ../../build/yolov5_ros2/yolov5_ros2.egg-info/requires.txt
+[1.624s] writing top-level names to ../../build/yolov5_ros2/yolov5_ros2.egg-info/top_level.txt
+[1.769s] reading manifest file '../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[1.771s] writing manifest file '../../build/yolov5_ros2/yolov5_ros2.egg-info/SOURCES.txt'
+[1.771s] running build
+[1.771s] running build_py
+[1.771s] copying yolov5_ros2/__init__.py -> /home/yyh/ros2_ws/build/yolov5_ros2/build/lib/yolov5_ros2
+[1.772s] copying yolov5_ros2/yolo_detect_2d.py -> /home/yyh/ros2_ws/build/yolov5_ros2/build/lib/yolov5_ros2
+[1.772s] copying yolov5_ros2/cv_tool.py -> /home/yyh/ros2_ws/build/yolov5_ros2/build/lib/yolov5_ros2
+[1.772s] running install
+[1.779s] running install_lib
+[1.800s] running install_data
+[1.800s] copying package.xml -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2
+[1.800s] copying launch/yolov5_ros2.launch.py -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/launch
+[1.801s] copying config/yolov5s.pt -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[1.813s] copying config/camera_info.yaml -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/config
+[1.813s] copying resource/yolov5_ros2 -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/resource
+[1.814s] copying resource/fish.jpg -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/resource
+[1.814s] copying resource/mouse.png -> /home/yyh/ros2_ws/install/yolov5_ros2/share/yolov5_ros2/resource
+[1.814s] running install_egg_info
+[1.835s] removing '/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages/yolov5_ros2-0.0.0-py3.8.egg-info' (and everything under it)
+[1.835s] Copying ../../build/yolov5_ros2/yolov5_ros2.egg-info to /home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages/yolov5_ros2-0.0.0-py3.8.egg-info
+[1.836s] running install_scripts
+[1.885s] Installing yolo_detect_2d script to /home/yyh/ros2_ws/install/yolov5_ros2/lib/yolov5_ros2
+[1.885s] writing list of installed files to '/home/yyh/ros2_ws/build/yolov5_ros2/install.log'
+[1.907s] Invoked command in '/home/yyh/ros2_ws/src/yolov5_ros2' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolov5_ros2 build --build-base /home/yyh/ros2_ws/build/yolov5_ros2/build install --record /home/yyh/ros2_ws/build/yolov5_ros2/install.log --single-version-externally-managed install_data

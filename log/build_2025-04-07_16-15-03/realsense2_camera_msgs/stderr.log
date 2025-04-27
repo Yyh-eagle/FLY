@@ -1,0 +1,22 @@
+CMake Error at /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:355 (find_package):
+  By not providing "Findament_cmake_pep257.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "ament_cmake_pep257", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "ament_cmake_pep257" with any of the following names:
+
+    ament_cmake_pep257Config.cmake
+    ament_cmake_pep257-config.cmake
+
+  Add the installation prefix of "ament_cmake_pep257" to CMAKE_PREFIX_PATH or
+  set "ament_cmake_pep257_DIR" to a directory containing one of the above
+  files.  If "ament_cmake_pep257" provides a separate development package or
+  SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:26 (rosidl_generate_interfaces)
+
+
+make: *** [Makefile:1468: cmake_check_build_system] Error 1

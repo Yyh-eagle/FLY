@@ -1,0 +1,39 @@
+[1.248s] Invoking command in '/home/yyh/ros2_ws/src/yyh_launch': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_launch build --build-base /home/yyh/ros2_ws/build/yyh_launch/build install --record /home/yyh/ros2_ws/build/yyh_launch/install.log --install-scripts $base/lib/yyh_launch --single-version-externally-managed install_data
+[1.531s] running egg_info
+[1.532s] creating ../../build/yyh_launch/yyh_launch.egg-info
+[1.532s] writing ../../build/yyh_launch/yyh_launch.egg-info/PKG-INFO
+[1.532s] writing dependency_links to ../../build/yyh_launch/yyh_launch.egg-info/dependency_links.txt
+[1.532s] writing entry points to ../../build/yyh_launch/yyh_launch.egg-info/entry_points.txt
+[1.532s] writing requirements to ../../build/yyh_launch/yyh_launch.egg-info/requires.txt
+[1.532s] writing top-level names to ../../build/yyh_launch/yyh_launch.egg-info/top_level.txt
+[1.543s] writing manifest file '../../build/yyh_launch/yyh_launch.egg-info/SOURCES.txt'
+[1.582s] reading manifest file '../../build/yyh_launch/yyh_launch.egg-info/SOURCES.txt'
+[1.583s] writing manifest file '../../build/yyh_launch/yyh_launch.egg-info/SOURCES.txt'
+[1.583s] running build
+[1.583s] running build_py
+[1.583s] creating /home/yyh/ros2_ws/build/yyh_launch/build
+[1.583s] creating /home/yyh/ros2_ws/build/yyh_launch/build/lib
+[1.584s] creating /home/yyh/ros2_ws/build/yyh_launch/build/lib/yyh_launch
+[1.584s] copying yyh_launch/__init__.py -> /home/yyh/ros2_ws/build/yyh_launch/build/lib/yyh_launch
+[1.584s] copying yyh_launch/mylaunch.py -> /home/yyh/ros2_ws/build/yyh_launch/build/lib/yyh_launch
+[1.584s] copying yyh_launch/all_launch.py -> /home/yyh/ros2_ws/build/yyh_launch/build/lib/yyh_launch
+[1.584s] running install
+[1.585s] running install_lib
+[1.586s] creating /home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages/yyh_launch
+[1.586s] copying /home/yyh/ros2_ws/build/yyh_launch/build/lib/yyh_launch/__init__.py -> /home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages/yyh_launch
+[1.586s] copying /home/yyh/ros2_ws/build/yyh_launch/build/lib/yyh_launch/mylaunch.py -> /home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages/yyh_launch
+[1.586s] copying /home/yyh/ros2_ws/build/yyh_launch/build/lib/yyh_launch/all_launch.py -> /home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages/yyh_launch
+[1.586s] byte-compiling /home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages/yyh_launch/__init__.py to __init__.cpython-38.pyc
+[1.589s] byte-compiling /home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages/yyh_launch/mylaunch.py to mylaunch.cpython-38.pyc
+[1.589s] byte-compiling /home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages/yyh_launch/all_launch.py to all_launch.cpython-38.pyc
+[1.589s] running install_data
+[1.589s] creating /home/yyh/ros2_ws/install/yyh_launch/share/ament_index
+[1.589s] creating /home/yyh/ros2_ws/install/yyh_launch/share/ament_index/resource_index
+[1.590s] creating /home/yyh/ros2_ws/install/yyh_launch/share/ament_index/resource_index/packages
+[1.590s] copying resource/yyh_launch -> /home/yyh/ros2_ws/install/yyh_launch/share/ament_index/resource_index/packages
+[1.590s] copying package.xml -> /home/yyh/ros2_ws/install/yyh_launch/share/yyh_launch
+[1.590s] running install_egg_info
+[1.592s] Copying ../../build/yyh_launch/yyh_launch.egg-info to /home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages/yyh_launch-0.0.0-py3.8.egg-info
+[1.592s] running install_scripts
+[1.615s] writing list of installed files to '/home/yyh/ros2_ws/build/yyh_launch/install.log'
+[1.659s] Invoked command in '/home/yyh/ros2_ws/src/yyh_launch' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_launch build --build-base /home/yyh/ros2_ws/build/yyh_launch/build install --record /home/yyh/ros2_ws/build/yyh_launch/install.log --install-scripts $base/lib/yyh_launch --single-version-externally-managed install_data

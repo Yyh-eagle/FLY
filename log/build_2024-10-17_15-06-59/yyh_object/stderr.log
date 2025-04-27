@@ -1,0 +1,5 @@
+  File "/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object/camera.py", line 66
+    ret frame = self.cap.read()
+        ^
+SyntaxError: invalid syntax
+

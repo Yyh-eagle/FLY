@@ -1,0 +1,5 @@
+  File "/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages/yyh_nav/Myserial.py", line 121
+    def Timer_zero()#每个定时器周期开始前需要归零的数据
+                    ^
+SyntaxError: invalid syntax
+

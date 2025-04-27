@@ -1,0 +1,26 @@
+[1.318s] Invoking command in '/home/yyh/ros2_ws/src/yyh_object': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_object/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_object build --build-base /home/yyh/ros2_ws/build/yyh_object/build install --record /home/yyh/ros2_ws/build/yyh_object/install.log --single-version-externally-managed install_data
+[1.700s] running egg_info
+[1.713s] writing ../../build/yyh_object/yyh_object.egg-info/PKG-INFO
+[1.715s] writing dependency_links to ../../build/yyh_object/yyh_object.egg-info/dependency_links.txt
+[1.715s] writing entry points to ../../build/yyh_object/yyh_object.egg-info/entry_points.txt
+[1.715s] writing requirements to ../../build/yyh_object/yyh_object.egg-info/requires.txt
+[1.715s] writing top-level names to ../../build/yyh_object/yyh_object.egg-info/top_level.txt
+[4.516s] writing manifest file '../../build/yyh_object/yyh_object.egg-info/SOURCES.txt'
+[4.516s] running build
+[4.516s] running build_py
+[4.516s] copying yyh_object/image.py -> /home/yyh/ros2_ws/build/yyh_object/build/lib/yyh_object
+[4.516s] copying yyh_object/yolo_function.py -> /home/yyh/ros2_ws/build/yyh_object/build/lib/yyh_object
+[4.517s] running install
+[4.525s] running install_lib
+[4.535s] copying /home/yyh/ros2_ws/build/yyh_object/build/lib/yyh_object/image.py -> /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object
+[4.535s] copying /home/yyh/ros2_ws/build/yyh_object/build/lib/yyh_object/yolo_function.py -> /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object
+[4.536s] byte-compiling /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object/image.py to image.cpython-38.pyc
+[4.536s] byte-compiling /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object/yolo_function.py to yolo_function.cpython-38.pyc
+[4.537s] running install_data
+[4.537s] running install_egg_info
+[4.547s] removing '/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object-0.0.0-py3.8.egg-info' (and everything under it)
+[4.547s] Copying ../../build/yyh_object/yyh_object.egg-info to /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh_object-0.0.0-py3.8.egg-info
+[4.547s] running install_scripts
+[4.589s] Installing image script to /home/yyh/ros2_ws/install/yyh_object/lib/yyh_object
+[4.590s] writing list of installed files to '/home/yyh/ros2_ws/build/yyh_object/install.log'
+[4.626s] Invoked command in '/home/yyh/ros2_ws/src/yyh_object' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_object/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_object build --build-base /home/yyh/ros2_ws/build/yyh_object/build install --record /home/yyh/ros2_ws/build/yyh_object/install.log --single-version-externally-managed install_data

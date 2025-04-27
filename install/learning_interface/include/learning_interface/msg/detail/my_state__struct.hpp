@@ -1,0 +1,1 @@
+/home/yyh/ros2_ws/build/learning_interface/rosidl_generator_cpp/learning_interface/msg/detail/my_state__struct.hpp

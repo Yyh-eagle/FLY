@@ -1,0 +1,5 @@
+  File "/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages/yyh_nav/tft265.py", line 73
+    self.print = "传入数据："+str([flag,data_num])+"/n"串口下行："+str(transdata)
+                                                      ^
+SyntaxError: invalid character in identifier
+

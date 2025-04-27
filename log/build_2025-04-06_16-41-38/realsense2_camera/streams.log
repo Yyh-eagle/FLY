@@ -1,0 +1,50 @@
+[0.196s] Invoking command in '/home/yyh/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs:/home/yyh/ros2_ws/install/realsense2_description:/home/yyh/ros2_ws/install/realsense2_camera:/home/yyh/ros2_ws/install/learning_interface:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy LD_LIBRARY_PATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib:/home/yyh/ros2_ws/install/realsense2_camera/lib:/home/yyh/ros2_ws/install/learning_interface/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/learning_interface/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/yyh/ros2_ws/build/realsense2_camera -- -j4 -l4
+[0.546s] [ 12%] Built target realsense2_camera_node
+[0.926s] [100%] Built target realsense2_camera
+[0.977s] Invoked command in '/home/yyh/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs:/home/yyh/ros2_ws/install/realsense2_description:/home/yyh/ros2_ws/install/realsense2_camera:/home/yyh/ros2_ws/install/learning_interface:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy LD_LIBRARY_PATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib:/home/yyh/ros2_ws/install/realsense2_camera/lib:/home/yyh/ros2_ws/install/learning_interface/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/learning_interface/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/yyh/ros2_ws/build/realsense2_camera -- -j4 -l4
+[1.404s] Invoking command in '/home/yyh/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs:/home/yyh/ros2_ws/install/realsense2_description:/home/yyh/ros2_ws/install/realsense2_camera:/home/yyh/ros2_ws/install/learning_interface:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy LD_LIBRARY_PATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib:/home/yyh/ros2_ws/install/realsense2_camera/lib:/home/yyh/ros2_ws/install/learning_interface/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/learning_interface/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/yyh/ros2_ws/build/realsense2_camera
+[1.447s] -- Install configuration: "Release"
+[1.451s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[1.453s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/lib/librealsense2_camera.so
+[1.454s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include
+[1.456s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/sensor_params.h
+[1.457s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/named_filter.h
+[1.457s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/realsense_node_factory.h
+[1.457s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/profile_manager.h
+[1.457s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/t265_realsense_node.h
+[1.457s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/ros_utils.h
+[1.457s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/base_realsense_node.h
+[1.458s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/image_publisher.h
+[1.467s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/ros_sensor.h
+[1.469s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/dynamic_params.h
+[1.470s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/constants.h
+[1.471s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/include/ros_param_backend.h
+[1.475s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch
+[1.478s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[1.479s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_d400_and_t265_launch.py
+[1.481s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_d435i_and_t265_launch.py
+[1.482s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[1.482s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[1.482s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[1.483s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[1.485s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[1.485s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[1.486s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[1.487s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[1.487s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[1.487s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[1.487s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[1.488s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[1.488s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[1.490s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[1.490s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[1.491s] -- Installing: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+[1.492s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[1.492s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[1.492s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.492s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[1.493s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.493s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[1.493s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[1.493s] -- Up-to-date: /home/yyh/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.xml
+[1.504s] Invoked command in '/home/yyh/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs:/home/yyh/ros2_ws/install/realsense2_description:/home/yyh/ros2_ws/install/realsense2_camera:/home/yyh/ros2_ws/install/learning_interface:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy LD_LIBRARY_PATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib:/home/yyh/ros2_ws/install/realsense2_camera/lib:/home/yyh/ros2_ws/install/learning_interface/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/learning_interface/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/yyh/ros2_ws/build/realsense2_camera

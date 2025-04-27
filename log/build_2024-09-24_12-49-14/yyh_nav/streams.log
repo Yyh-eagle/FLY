@@ -1,0 +1,44 @@
+[0.964s] Invoking command in '/home/yyh/ros2_ws/src/yyh_nav': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_nav build --build-base /home/yyh/ros2_ws/build/yyh_nav/build install --record /home/yyh/ros2_ws/build/yyh_nav/install.log --install-scripts $base/lib/yyh_nav --single-version-externally-managed install_data
+[1.070s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/dist.py:452: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[1.070s] !!
+[1.070s] 
+[1.070s]         ********************************************************************************
+[1.070s]         Usage of dash-separated 'script-dir' will not be supported in future
+[1.070s]         versions. Please use the underscore name 'script_dir' instead.
+[1.070s] 
+[1.070s]         By 2024-Sep-26, you need to update your project and remove deprecated calls
+[1.070s]         or your builds will no longer be supported.
+[1.071s] 
+[1.071s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[1.071s]         ********************************************************************************
+[1.071s] 
+[1.071s] !!
+[1.071s]   opt = self.warn_dash_deprecation(opt, section)
+[1.082s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.082s]   warnings.warn(msg)
+[1.162s] running egg_info
+[1.174s] writing ../../build/yyh_nav/yyh_nav.egg-info/PKG-INFO
+[1.174s] writing dependency_links to ../../build/yyh_nav/yyh_nav.egg-info/dependency_links.txt
+[1.174s] writing entry points to ../../build/yyh_nav/yyh_nav.egg-info/entry_points.txt
+[1.174s] writing requirements to ../../build/yyh_nav/yyh_nav.egg-info/requires.txt
+[1.174s] writing top-level names to ../../build/yyh_nav/yyh_nav.egg-info/top_level.txt
+[1.527s] reading manifest file '../../build/yyh_nav/yyh_nav.egg-info/SOURCES.txt'
+[1.528s] writing manifest file '../../build/yyh_nav/yyh_nav.egg-info/SOURCES.txt'
+[1.528s] running build
+[1.528s] running build_py
+[1.529s] copying yyh_nav/__init__.py -> /home/yyh/ros2_ws/build/yyh_nav/build/lib/yyh_nav
+[1.529s] copying yyh_nav/getserial.py -> /home/yyh/ros2_ws/build/yyh_nav/build/lib/yyh_nav
+[1.529s] copying yyh_nav/tft265.py -> /home/yyh/ros2_ws/build/yyh_nav/build/lib/yyh_nav
+[1.529s] running install
+[1.533s] running install_lib
+[1.545s] running install_data
+[1.546s] copying resource/yyh_nav -> /home/yyh/ros2_ws/install/yyh_nav/share/ament_index/resource_index/packages
+[1.546s] copying package.xml -> /home/yyh/ros2_ws/install/yyh_nav/share/yyh_nav
+[1.546s] copying launch/tf_launch.py -> /home/yyh/ros2_ws/install/yyh_nav/share/yyh_nav/launch
+[1.546s] running install_egg_info
+[1.558s] removing '/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages/yyh_nav-0.0.0-py3.8.egg-info' (and everything under it)
+[1.558s] Copying ../../build/yyh_nav/yyh_nav.egg-info to /home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages/yyh_nav-0.0.0-py3.8.egg-info
+[1.559s] running install_scripts
+[1.588s] Installing tft265 script to /home/yyh/ros2_ws/install/yyh_nav/lib/yyh_nav
+[1.588s] writing list of installed files to '/home/yyh/ros2_ws/build/yyh_nav/install.log'
+[1.611s] Invoked command in '/home/yyh/ros2_ws/src/yyh_nav' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_nav build --build-base /home/yyh/ros2_ws/build/yyh_nav/build install --record /home/yyh/ros2_ws/build/yyh_nav/install.log --install-scripts $base/lib/yyh_nav --single-version-externally-managed install_data

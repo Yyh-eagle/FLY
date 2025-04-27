@@ -1,0 +1,55 @@
+[1.338s] Invoking command in '/home/yyh/ros2_ws/src/yyh_nav': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_nav build --build-base /home/yyh/ros2_ws/build/yyh_nav/build install --record /home/yyh/ros2_ws/build/yyh_nav/install.log --install-scripts $base/lib/yyh_nav --single-version-externally-managed install_data
+[1.500s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/dist.py:452: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[1.500s] !!
+[1.500s] 
+[1.500s]         ********************************************************************************
+[1.500s]         Usage of dash-separated 'script-dir' will not be supported in future
+[1.500s]         versions. Please use the underscore name 'script_dir' instead.
+[1.500s] 
+[1.500s]         By 2024-Sep-26, you need to update your project and remove deprecated calls
+[1.500s]         or your builds will no longer be supported.
+[1.500s] 
+[1.500s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[1.501s]         ********************************************************************************
+[1.501s] 
+[1.501s] !!
+[1.501s]   opt = self.warn_dash_deprecation(opt, section)
+[1.521s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.521s]   warnings.warn(msg)
+[1.644s] running egg_info
+[1.664s] writing ../../build/yyh_nav/yyh_nav.egg-info/PKG-INFO
+[1.665s] writing dependency_links to ../../build/yyh_nav/yyh_nav.egg-info/dependency_links.txt
+[1.665s] writing entry points to ../../build/yyh_nav/yyh_nav.egg-info/entry_points.txt
+[1.665s] writing requirements to ../../build/yyh_nav/yyh_nav.egg-info/requires.txt
+[1.665s] writing top-level names to ../../build/yyh_nav/yyh_nav.egg-info/top_level.txt
+[1.809s] reading manifest file '../../build/yyh_nav/yyh_nav.egg-info/SOURCES.txt'
+[1.810s] Traceback (most recent call last):
+[1.810s]   File "setup.py", line 7, in <module>
+[1.810s]     setup(
+[1.810s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/__init__.py", line 117, in setup
+[1.810s]     return distutils.core.setup(**attrs)
+[1.810s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 183, in setup
+[1.810s]     return run_commands(dist)
+[1.810s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 199, in run_commands
+[1.810s]     dist.run_commands()
+[1.810s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 954, in run_commands
+[1.810s]     self.run_command(cmd)
+[1.810s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/dist.py", line 950, in run_command
+[1.810s]     super().run_command(command)
+[1.811s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 973, in run_command
+[1.811s]     cmd_obj.run()
+[1.811s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 311, in run
+[1.811s]     self.find_sources()
+[1.811s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 319, in find_sources
+[1.811s]     mm.run()
+[1.811s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 545, in run
+[1.811s]     self.prune_file_list()
+[1.811s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/command/sdist.py", line 161, in prune_file_list
+[1.811s]     super().prune_file_list()
+[1.811s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/_distutils/command/sdist.py", line 380, in prune_file_list
+[1.811s]     base_dir = self.distribution.get_fullname()
+[1.811s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/_core_metadata.py", line 267, in get_fullname
+[1.811s]     return _distribution_fullname(self.get_name(), self.get_version())
+[1.811s]   File "/home/yyh/.local/lib/python3.8/site-packages/setuptools/_core_metadata.py", line 285, in _distribution_fullname
+[1.811s]     canonicalize_version(version, strip_trailing_zero=False),
+[1.812s] TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'

@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.000132] (learning_interface) JobQueued: {'identifier': 'learning_interface', 'dependencies': OrderedDict()}
+[0.000164] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.000184] (yolov5_ros2) JobQueued: {'identifier': 'yolov5_ros2', 'dependencies': OrderedDict()}
+[0.000202] (yyh_nav) JobQueued: {'identifier': 'yyh_nav', 'dependencies': OrderedDict()}
+[0.000221] (yyh_object) JobQueued: {'identifier': 'yyh_object', 'dependencies': OrderedDict()}
+[0.000239] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/yyh/ros2_ws/install/realsense2_camera_msgs')])}
+[0.000262] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/yyh/ros2_ws/install/realsense2_camera_msgs')])}
+[0.000550] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.008320] (learning_interface) JobStarted: {'identifier': 'learning_interface'}
+[0.016721] (yolov5_ros2) JobStarted: {'identifier': 'yolov5_ros2'}
+[0.032502] (yyh_nav) JobStarted: {'identifier': 'yyh_nav'}
+[0.054662] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.055359] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[0.055877] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yyh/ros2_ws/build/realsense2_camera_msgs', '--', '-j4', '-l4'], 'cwd': '/home/yyh/ros2_ws/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'yyh'), ('SSH_CLIENT', '192.168.66.198 52155 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/yyh/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yyh/ros2_ws/install/realsense2_camera/lib:/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib:/home/yyh/ros2_ws/install/learning_interface/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/yyh/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yyh'), ('OLDPWD', '/home/yyh'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e05eef55-73ad-4b4f-8a12-b46c6aa1fec5.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/yyh/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/yyh/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/yyh/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yyh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/yyh/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_GB.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e6ca8b497e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/home/yyh/ros2_ws/install/realsense2_description:/home/yyh/ros2_ws/install/realsense2_camera:/home/yyh/ros2_ws/install/realsense2_camera_msgs:/home/yyh/ros2_ws/install/learning_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/yyh/ros2_ws/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.66.198 52155 192.168.66.150 22'), ('PYTHONPATH', '/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/learning_interface/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yyh/ros2_ws/install/realsense2_description:/home/yyh/ros2_ws/install/realsense2_camera:/home/yyh/ros2_ws/install/realsense2_camera_msgs:/home/yyh/ros2_ws/install/learning_interface:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy')]), 'shell': False}
+[0.062362] (learning_interface) JobProgress: {'identifier': 'learning_interface', 'progress': 'cmake'}
+[0.064638] (learning_interface) JobProgress: {'identifier': 'learning_interface', 'progress': 'build'}
+[0.065379] (learning_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yyh/ros2_ws/build/learning_interface', '--', '-j4', '-l4'], 'cwd': '/home/yyh/ros2_ws/build/learning_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'yyh'), ('SSH_CLIENT', '192.168.66.198 52155 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/yyh/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yyh/ros2_ws/install/realsense2_camera/lib:/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib:/home/yyh/ros2_ws/install/learning_interface/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/yyh/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yyh'), ('OLDPWD', '/home/yyh'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e05eef55-73ad-4b4f-8a12-b46c6aa1fec5.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/yyh/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/yyh/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/yyh/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yyh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/yyh/.vscode-server/cli/servers/Stable-dc96b837cf6bb4af9cd736aa3af08cf8279f7685/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_GB.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e6ca8b497e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/home/yyh/ros2_ws/install/realsense2_description:/home/yyh/ros2_ws/install/realsense2_camera:/home/yyh/ros2_ws/install/realsense2_camera_msgs:/home/yyh/ros2_ws/install/learning_interface:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/yyh/ros2_ws/build/learning_interface'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.66.198 52155 192.168.66.150 22'), ('PYTHONPATH', '/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yyh_launch/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/yyh/ros2_ws/install/learning_interface/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yyh/ros2_ws/install/realsense2_description:/home/yyh/ros2_ws/install/realsense2_camera:/home/yyh/ros2_ws/install/realsense2_camera_msgs:/home/yyh/ros2_ws/install/learning_interface:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy')]), 'shell': False}
+[0.099671] (-) TimerEvent: {}
+[0.200738] (-) TimerEvent: {}
+[0.302301] (-) TimerEvent: {}
+[0.402916] (-) TimerEvent: {}
+[0.503541] (-) TimerEvent: {}
+[0.603863] (-) TimerEvent: {}
+[0.704254] (-) TimerEvent: {}
+[0.804846] (-) TimerEvent: {}
+[0.905289] (-) TimerEvent: {}
+[1.005739] (-) TimerEvent: {}
+[1.106242] (-) TimerEvent: {}
+[1.206562] (-) TimerEvent: {}
+[1.307286] (-) TimerEvent: {}
+[1.370087] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.370719] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.370912] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.371157] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.371245] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.371328] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.371418] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.371502] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)\n'}
+[1.371584] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[1.371665] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.371744] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.9.8 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)\n'}
+[1.371824] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.9.8 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)\n'}
+[1.371902] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.371980] (realsense2_camera_msgs) StdoutLine: {'line': b'See also "/home/yyh/ros2_ws/build/realsense2_camera_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[1.372063] (learning_interface) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.372167] (learning_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.372247] (learning_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.372327] (learning_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.372406] (learning_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.372486] (learning_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.372564] (learning_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.372648] (learning_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.372726] (learning_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.372806] (realsense2_camera_msgs) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake:185 (find_package):\n'}
+[1.372903] (realsense2_camera_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake_uncrustify.cmake" in CMAKE_MODULE_PATH\n'}
+[1.372984] (realsense2_camera_msgs) StderrLine: {'line': b'  this project has asked CMake to find a package configuration file provided\n'}
+[1.373063] (realsense2_camera_msgs) StderrLine: {'line': b'  by "ament_cmake_uncrustify", but CMake did not find one.\n'}
+[1.373142] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[1.373220] (realsense2_camera_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[1.373299] (realsense2_camera_msgs) StderrLine: {'line': b'  "ament_cmake_uncrustify" with any of the following names:\n'}
+[1.373378] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[1.373455] (realsense2_camera_msgs) StderrLine: {'line': b'    ament_cmake_uncrustifyConfig.cmake\n'}
+[1.373532] (realsense2_camera_msgs) StderrLine: {'line': b'    ament_cmake_uncrustify-config.cmake\n'}
+[1.373611] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[1.373688] (realsense2_camera_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake_uncrustify" to\n'}
+[1.373765] (realsense2_camera_msgs) StderrLine: {'line': b'  CMAKE_PREFIX_PATH or set "ament_cmake_uncrustify_DIR" to a directory\n'}
+[1.373842] (realsense2_camera_msgs) StderrLine: {'line': b'  containing one of the above files.  If "ament_cmake_uncrustify" provides a\n'}
+[1.373919] (realsense2_camera_msgs) StderrLine: {'line': b'  separate development package or SDK, be sure it has been installed.\n'}
+[1.373996] (realsense2_camera_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.374073] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.374151] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[1.374232] (realsense2_camera_msgs) StderrLine: {'line': b'  CMakeLists.txt:26 (rosidl_generate_interfaces)\n'}
+[1.374301] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[1.374371] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[1.374466] (realsense2_camera_msgs) StderrLine: {'line': b'make: *** [Makefile:1468: cmake_check_build_system] Error 1\n'}
+[1.384761] (realsense2_camera_msgs) CommandEnded: {'returncode': 2}
+[1.394304] (learning_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.407425] (-) TimerEvent: {}
+[1.459638] (learning_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.501255] (learning_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.501934] (learning_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.507485] (-) TimerEvent: {}
+[1.543390] (learning_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.543624] (learning_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.543720] (learning_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.607589] (-) TimerEvent: {}
+[1.627427] (learning_interface) StderrLine: {'line': b'CMake Error at CMakeLists.txt:35 (find_package):\n'}
+[1.627699] (learning_interface) StderrLine: {'line': b'  By not providing "Findament_lint_auto.cmake" in CMAKE_MODULE_PATH this\n'}
+[1.627807] (learning_interface) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[1.627898] (learning_interface) StderrLine: {'line': b'  "ament_lint_auto", but CMake did not find one.\n'}
+[1.627986] (learning_interface) StderrLine: {'line': b'\n'}
+[1.628075] (learning_interface) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_lint_auto"\n'}
+[1.628194] (learning_interface) StderrLine: {'line': b'  with any of the following names:\n'}
+[1.628300] (learning_interface) StderrLine: {'line': b'\n'}
+[1.628387] (learning_interface) StderrLine: {'line': b'    ament_lint_autoConfig.cmake\n'}
+[1.628500] (learning_interface) StderrLine: {'line': b'    ament_lint_auto-config.cmake\n'}
+[1.628592] (learning_interface) StderrLine: {'line': b'\n'}
+[1.628688] (learning_interface) StderrLine: {'line': b'  Add the installation prefix of "ament_lint_auto" to CMAKE_PREFIX_PATH or\n'}
+[1.628799] (learning_interface) StderrLine: {'line': b'  set "ament_lint_auto_DIR" to a directory containing one of the above files.\n'}
+[1.628885] (learning_interface) StderrLine: {'line': b'  If "ament_lint_auto" provides a separate development package or SDK, be\n'}
+[1.628959] (learning_interface) StderrLine: {'line': b'  sure it has been installed.\n'}
+[1.629026] (learning_interface) StderrLine: {'line': b'\n'}
+[1.629120] (learning_interface) StderrLine: {'line': b'\n'}
+[1.640583] (learning_interface) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.641313] (learning_interface) StdoutLine: {'line': b'See also "/home/yyh/ros2_ws/build/learning_interface/CMakeFiles/CMakeOutput.log".\n'}
+[1.641478] (learning_interface) StderrLine: {'line': b'make: *** [Makefile:1948: cmake_check_build_system] Error 1\n'}
+[1.641596] (learning_interface) CommandEnded: {'returncode': 2}
+[1.707686] (-) TimerEvent: {}
+[1.808031] (-) TimerEvent: {}
+[1.908333] (-) TimerEvent: {}
+[1.914942] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 2}
+[1.998488] (learning_interface) JobEnded: {'identifier': 'learning_interface', 'rc': 'SIGINT'}
+[2.008680] (-) TimerEvent: {}
+[2.109447] (-) TimerEvent: {}
+[2.209917] (-) TimerEvent: {}
+[2.310660] (-) TimerEvent: {}
+[2.371227] (yyh_nav) JobEnded: {'identifier': 'yyh_nav', 'rc': 'SIGINT'}
+[2.409461] (yolov5_ros2) JobEnded: {'identifier': 'yolov5_ros2', 'rc': 'SIGINT'}
+[2.410734] (-) TimerEvent: {}
+[2.420146] (yyh_object) JobSkipped: {'identifier': 'yyh_object'}
+[2.420196] (realsense2_camera) JobSkipped: {'identifier': 'realsense2_camera'}
+[2.420220] (realsense2_description) JobSkipped: {'identifier': 'realsense2_description'}
+[2.420242] (-) EventReactorShutdown: {}

@@ -1,0 +1,29 @@
+[1.133s] Invoking command in '/home/yyh/ros2_ws/build/yyh_object': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_object/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yyh/ros2_ws/build/yyh_object/build --no-deps symlink_data
+[1.525s] running develop
+[1.526s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.527s] !!
+[1.527s] 
+[1.527s]         ********************************************************************************
+[1.528s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.528s]         Instead, use pypa/build, pypa/installer or other
+[1.529s]         standards-based tools.
+[1.529s] 
+[1.529s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.530s]         ********************************************************************************
+[1.530s] 
+[1.530s] !!
+[1.531s]   easy_install.initialize_options(self)
+[1.776s] running egg_info
+[1.795s] writing yyh_object.egg-info/PKG-INFO
+[1.796s] writing dependency_links to yyh_object.egg-info/dependency_links.txt
+[1.796s] writing entry points to yyh_object.egg-info/entry_points.txt
+[1.796s] writing requirements to yyh_object.egg-info/requires.txt
+[1.796s] writing top-level names to yyh_object.egg-info/top_level.txt
+[5.864s] writing manifest file 'yyh_object.egg-info/SOURCES.txt'
+[5.905s] running build_ext
+[5.905s] Creating /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh-object.egg-link (link to .)
+[5.906s] Installing image script to /home/yyh/ros2_ws/install/yyh_object/lib/yyh_object
+[5.907s] 
+[5.907s] Installed /home/yyh/ros2_ws/build/yyh_object
+[5.907s] running symlink_data
+[5.947s] Invoked command in '/home/yyh/ros2_ws/build/yyh_object' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_object/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yyh/ros2_ws/build/yyh_object/build --no-deps symlink_data

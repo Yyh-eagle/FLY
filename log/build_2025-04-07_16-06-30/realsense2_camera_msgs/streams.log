@@ -1,0 +1,25 @@
+[0.047s] Invoking command in '/home/yyh/ros2_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/yyh/ros2_ws/build/realsense2_camera_msgs -- -j4 -l4
+[0.891s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.891s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.891s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.891s] -- Configuring incomplete, errors occurred!
+[0.891s] See also "/home/yyh/ros2_ws/build/realsense2_camera_msgs/CMakeFiles/CMakeOutput.log".
+[0.896s] CMake Error at CMakeLists.txt:17 (find_package):
+[0.896s]   By not providing "Findrosidl_default_generators.cmake" in CMAKE_MODULE_PATH
+[0.896s]   this project has asked CMake to find a package configuration file provided
+[0.896s]   by "rosidl_default_generators", but CMake did not find one.
+[0.896s] 
+[0.896s]   Could not find a package configuration file provided by
+[0.896s]   "rosidl_default_generators" with any of the following names:
+[0.896s] 
+[0.896s]     rosidl_default_generatorsConfig.cmake
+[0.896s]     rosidl_default_generators-config.cmake
+[0.897s] 
+[0.897s]   Add the installation prefix of "rosidl_default_generators" to
+[0.897s]   CMAKE_PREFIX_PATH or set "rosidl_default_generators_DIR" to a directory
+[0.897s]   containing one of the above files.  If "rosidl_default_generators" provides
+[0.897s]   a separate development package or SDK, be sure it has been installed.
+[0.897s] 
+[0.897s] 
+[0.897s] make: *** [Makefile:1468: cmake_check_build_system] Error 1
+[1.455s] Invoked command in '/home/yyh/ros2_ws/build/realsense2_camera_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/yyh/ros2_ws/build/realsense2_camera_msgs -- -j4 -l4

@@ -1,0 +1,2 @@
+Invoking command in '/home/yyh/ros2_ws/build/learning_interface': /usr/bin/cmake /home/yyh/ros2_ws/src/learning_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yyh/ros2_ws/install/learning_interface
+Invoked command in '/home/yyh/ros2_ws/build/learning_interface' returned '1': /usr/bin/cmake /home/yyh/ros2_ws/src/learning_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yyh/ros2_ws/install/learning_interface

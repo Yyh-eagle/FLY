@@ -1,0 +1,18 @@
+CMake Error at CMakeLists.txt:99 (find_package):
+  By not providing "Findnav_msgs.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "nav_msgs",
+  but CMake did not find one.
+
+  Could not find a package configuration file provided by "nav_msgs" with any
+  of the following names:
+
+    nav_msgsConfig.cmake
+    nav_msgs-config.cmake
+
+  Add the installation prefix of "nav_msgs" to CMAKE_PREFIX_PATH or set
+  "nav_msgs_DIR" to a directory containing one of the above files.  If
+  "nav_msgs" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+make: *** [Makefile:670: cmake_check_build_system] Error 1

@@ -1,0 +1,14 @@
+/home/yyh/.local/lib/python3.8/site-packages/setuptools/dist.py:710: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+/home/yyh/.local/lib/python3.8/site-packages/setuptools_scm/_integration/setuptools.py:31: RuntimeWarning: 
+ERROR: setuptools==58.0.0 is used in combination with setuptools_scm>=8.x
+
+Your build configuration is incomplete and previously worked by accident!
+setuptools_scm requires setuptools>=61
+
+Suggested workaround if applicable:
+ - migrating from the deprecated setup_requires mechanism to pep517/518
+   and using a pyproject.toml to declare build dependencies
+   which are reliably pre-installed before running the build tools
+
+  warnings.warn(

@@ -1,0 +1,25 @@
+[0.050s] Invoking command in '/home/yyh/ros2_ws/build/learning_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/yyh/ros2_ws/build/learning_interface -- -j4 -l4
+[0.887s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.887s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.887s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.887s] -- Configuring incomplete, errors occurred!
+[0.888s] See also "/home/yyh/ros2_ws/build/learning_interface/CMakeFiles/CMakeOutput.log".
+[0.894s] CMake Error at CMakeLists.txt:23 (find_package):
+[0.894s]   By not providing "Findrosidl_default_generators.cmake" in CMAKE_MODULE_PATH
+[0.894s]   this project has asked CMake to find a package configuration file provided
+[0.894s]   by "rosidl_default_generators", but CMake did not find one.
+[0.894s] 
+[0.894s]   Could not find a package configuration file provided by
+[0.895s]   "rosidl_default_generators" with any of the following names:
+[0.895s] 
+[0.895s]     rosidl_default_generatorsConfig.cmake
+[0.895s]     rosidl_default_generators-config.cmake
+[0.895s] 
+[0.895s]   Add the installation prefix of "rosidl_default_generators" to
+[0.895s]   CMAKE_PREFIX_PATH or set "rosidl_default_generators_DIR" to a directory
+[0.895s]   containing one of the above files.  If "rosidl_default_generators" provides
+[0.895s]   a separate development package or SDK, be sure it has been installed.
+[0.895s] 
+[0.895s] 
+[0.895s] make: *** [Makefile:1948: cmake_check_build_system] Error 1
+[1.452s] Invoked command in '/home/yyh/ros2_ws/build/learning_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/yyh/ros2_ws/build/learning_interface -- -j4 -l4

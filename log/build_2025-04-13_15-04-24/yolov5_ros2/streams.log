@@ -1,0 +1,31 @@
+[1.337s] Invoking command in '/home/yyh/ros2_ws/build/yolov5_ros2': PYTHONPATH=/home/yyh/ros2_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yyh/ros2_ws/build/yolov5_ros2/build --no-deps symlink_data
+[1.536s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.536s]   warnings.warn(msg)
+[1.817s] running develop
+[1.818s] /home/yyh/.local/lib/python3.8/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.818s] !!
+[1.818s] 
+[1.818s]         ********************************************************************************
+[1.818s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.818s]         Instead, use pypa/build, pypa/installer or other
+[1.818s]         standards-based tools.
+[1.818s] 
+[1.818s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.818s]         ********************************************************************************
+[1.818s] 
+[1.818s] !!
+[1.818s]   easy_install.initialize_options(self)
+[2.104s] running egg_info
+[2.127s] writing yolov5_ros2.egg-info/PKG-INFO
+[2.127s] writing dependency_links to yolov5_ros2.egg-info/dependency_links.txt
+[2.128s] writing entry points to yolov5_ros2.egg-info/entry_points.txt
+[2.128s] writing requirements to yolov5_ros2.egg-info/requires.txt
+[2.128s] writing top-level names to yolov5_ros2.egg-info/top_level.txt
+[5.842s] writing manifest file 'yolov5_ros2.egg-info/SOURCES.txt'
+[5.916s] running build_ext
+[5.917s] Creating /home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages/yolov5-ros2.egg-link (link to .)
+[5.919s] Installing yolo_detect_2d script to /home/yyh/ros2_ws/install/yolov5_ros2/lib/yolov5_ros2
+[5.921s] 
+[5.921s] Installed /home/yyh/ros2_ws/build/yolov5_ros2
+[5.922s] running symlink_data
+[5.987s] Invoked command in '/home/yyh/ros2_ws/build/yolov5_ros2' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yolov5_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yolov5_ros2/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yyh/ros2_ws/build/yolov5_ros2/build --no-deps symlink_data

@@ -1,0 +1,38 @@
+[0.056s] Invoking command in '/home/yyh/ros2_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/yyh/ros2_ws/build/realsense2_camera_msgs -- -j4 -l4
+[1.370s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.370s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.370s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.371s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.371s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.371s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.371s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[1.371s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[1.371s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.371s] -- Found ament_cmake_cppcheck: 0.9.8 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)
+[1.371s] -- Found ament_cmake_cpplint: 0.9.8 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)
+[1.371s] -- Configuring incomplete, errors occurred!
+[1.371s] See also "/home/yyh/ros2_ws/build/realsense2_camera_msgs/CMakeFiles/CMakeOutput.log".
+[1.372s] CMake Error at /opt/ros/foxy/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake:185 (find_package):
+[1.372s]   By not providing "Findament_cmake_uncrustify.cmake" in CMAKE_MODULE_PATH
+[1.372s]   this project has asked CMake to find a package configuration file provided
+[1.372s]   by "ament_cmake_uncrustify", but CMake did not find one.
+[1.373s] 
+[1.373s]   Could not find a package configuration file provided by
+[1.373s]   "ament_cmake_uncrustify" with any of the following names:
+[1.373s] 
+[1.373s]     ament_cmake_uncrustifyConfig.cmake
+[1.373s]     ament_cmake_uncrustify-config.cmake
+[1.373s] 
+[1.373s]   Add the installation prefix of "ament_cmake_uncrustify" to
+[1.373s]   CMAKE_PREFIX_PATH or set "ament_cmake_uncrustify_DIR" to a directory
+[1.373s]   containing one of the above files.  If "ament_cmake_uncrustify" provides a
+[1.373s]   separate development package or SDK, be sure it has been installed.
+[1.373s] Call Stack (most recent call first):
+[1.373s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.374s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.374s]   CMakeLists.txt:26 (rosidl_generate_interfaces)
+[1.374s] 
+[1.374s] 
+[1.374s] make: *** [Makefile:1468: cmake_check_build_system] Error 1
+[1.385s] Invoked command in '/home/yyh/ros2_ws/build/realsense2_camera_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yyh/ros2_ws/install/yyh_object:/home/yyh/ros2_ws/install/yyh_nav:/home/yyh/ros2_ws/install/yyh_launch:/home/yyh/ros2_ws/install/yolov5_ros2:/opt/ros/foxy /usr/bin/cmake --build /home/yyh/ros2_ws/build/realsense2_camera_msgs -- -j4 -l4

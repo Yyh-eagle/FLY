@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/yyh/ros2_ws/build/learning_interface/rosidl_generator_py/learning_interface/learning_interface_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" "TARGETS" "learning_interface__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.8/site-packages/learning_interface")

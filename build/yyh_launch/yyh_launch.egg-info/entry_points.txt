@@ -1,0 +1,2 @@
+[console_scripts]
+all_launch = yyh_launch.all_launch:main

@@ -1,0 +1,24 @@
+[4.236s] Invoking command in '/home/yyh/ros2_ws/src/yyh_nav': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_nav build --build-base /home/yyh/ros2_ws/build/yyh_nav/build install --record /home/yyh/ros2_ws/build/yyh_nav/install.log --single-version-externally-managed install_data
+[6.183s] running egg_info
+[6.235s] writing ../../build/yyh_nav/yyh_nav.egg-info/PKG-INFO
+[6.237s] writing dependency_links to ../../build/yyh_nav/yyh_nav.egg-info/dependency_links.txt
+[6.237s] writing entry points to ../../build/yyh_nav/yyh_nav.egg-info/entry_points.txt
+[6.239s] writing requirements to ../../build/yyh_nav/yyh_nav.egg-info/requires.txt
+[6.243s] writing top-level names to ../../build/yyh_nav/yyh_nav.egg-info/top_level.txt
+[14.946s] writing manifest file '../../build/yyh_nav/yyh_nav.egg-info/SOURCES.txt'
+[14.947s] running build
+[14.949s] running build_py
+[14.951s] copying yyh_nav/tft265.py -> /home/yyh/ros2_ws/build/yyh_nav/build/lib/yyh_nav
+[14.954s] running install
+[14.968s] running install_lib
+[15.009s] copying /home/yyh/ros2_ws/build/yyh_nav/build/lib/yyh_nav/tft265.py -> /home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages/yyh_nav
+[15.014s] byte-compiling /home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages/yyh_nav/tft265.py to tft265.cpython-38.pyc
+[15.025s] running install_data
+[15.028s] running install_egg_info
+[15.128s] removing '/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages/yyh_nav-0.0.0-py3.8.egg-info' (and everything under it)
+[15.151s] Copying ../../build/yyh_nav/yyh_nav.egg-info to /home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages/yyh_nav-0.0.0-py3.8.egg-info
+[15.171s] running install_scripts
+[15.309s] Installing t265_pose_test script to /home/yyh/ros2_ws/install/yyh_nav/lib/yyh_nav
+[15.313s] Installing tft265 script to /home/yyh/ros2_ws/install/yyh_nav/lib/yyh_nav
+[15.315s] writing list of installed files to '/home/yyh/ros2_ws/build/yyh_nav/install.log'
+[15.491s] Invoked command in '/home/yyh/ros2_ws/src/yyh_nav' returned '0': PYTHONPATH=/home/yyh/ros2_ws/build/yyh_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yyh/ros2_ws/install/yyh_nav/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yyh_nav build --build-base /home/yyh/ros2_ws/build/yyh_nav/build install --record /home/yyh/ros2_ws/build/yyh_nav/install.log --single-version-externally-managed install_data
