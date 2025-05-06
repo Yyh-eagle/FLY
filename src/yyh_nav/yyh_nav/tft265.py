@@ -22,7 +22,7 @@ import time
 class SubscriberNode(Node):
     def __init__(self, name):
         super().__init__(name)
-        self.l0_vector = np.array([-0.197,0,0])
+        self.l0_vector = np.array([-0.21,0,0])
         self.rot_matrix = None  # 缓存旋转矩阵        
         self.serial = SerialPort()#通信类初始化
 
@@ -38,7 +38,7 @@ class SubscriberNode(Node):
 
     def timer_serial_callback(self):#100帧发送串口数据
         self.serial.Send_message()
-        self.get_logger().info(f"Data: {self.serial.data_num}")
+        #self.get_logger().info(f"Data: {self.serial.data_num}")
 
     def timer_callback(self):#10帧，为了
         self.serial.receive()#定时器接受数据

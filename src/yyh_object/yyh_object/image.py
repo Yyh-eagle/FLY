@@ -45,7 +45,7 @@ class ImageSubscriber(Node):
         self.colord435i = None#d435i图像
         self.depthd435i = None#d435i深度图
         
-        self.usb = cv2.VideoCapture(6)
+        self.usb = cv2.VideoCapture('/dev/usb')
         self.yolov10 = YOLOv10("/home/yyh/ros2_ws/src/yyh_object/yyh_object/best.pt")
 
 
@@ -67,28 +67,35 @@ class ImageSubscriber(Node):
         self.param.d435i_depth = self.cv_bridge.imgmsg_to_cv2(depth_msg, '16UC1')
         ret, self.param.usb = self.usb.read()
         #任务规划核心函数
-        self.task_plan(self.param)
+        #self.task_plan(self.param)
    
         cv2.imshow("D435i", self.param.d435i_color)
-        cv2.imshow("USB",self.param.usb)
+        #cv2.imshow("USB",self.param.usb)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             return
-
+    #-----------------------------------------------------------------------------#
+    #         任务规划核心函数  
+    #-----------------------------------------------------------------------------#
         
-    def task_plan(self,param):#任务规划
+    def task_plan(self,param):
+        #------------------------------------------------------------#
+        #  ts:0 tid:0  ============>yolo推理
+        #------------------------------------------------------------#
         if param.task_state == 0:
-            if self.param.task_state == 1 :
+            if self.param.task_state == 0 :
                 aim = None
+                
                 if self.yolo_cnt%4==0:
-                    aim = yolo_root_d4(param,self.yolov10)
+                    if ifarrive==0:
+                        aim = yolo_d4(param,self.yolov10)
+                    else:
+                        aim = yolo_usb(param,self.yolov10)
                 self.yolo_cnt+=1
-                
-            elif self.param.task_state == 0:
-                #self.get_logger().info("task_state = 0")    
+            #------------------------------------------------------------#
+            #  ts:1  ============>二维码识别
+            #------------------------------------------------------------#    
+            elif self.param.task_state == 1:
                 aim = Code2D(param)
-
-                
-
 
         if aim is not None:
             
@@ -104,7 +111,8 @@ class ImageSubscriber(Node):
                 self.pub_d435.publish(object)
             else:
                 pass
-
+    def __del__(self):
+        cv2.destroyAllWindows() 
                 
        
     def listener_callback_stm(self,msg):#主任务在这里写，可以保证周期话运行
