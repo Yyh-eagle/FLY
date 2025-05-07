@@ -36,16 +36,21 @@ from Code2D import Code2D
 class ImageSubscriber(Node):
     def __init__(self, name):
         
-        super().__init__(name)    
+        super().__init__(name) 
+        #计数器   
         self.yolo_cnt = 0
-        self.no_aim_cnt = 0
+        self.no_aim_cnt_usb = 0
+        self.no_aim_cnt_d4 = 0
         self.cv_bridge = CvBridge()
         
         self.param = Param(self.get_logger())#传递参数初始化
+        #d435i镜头的初始化以及消息格式
         self.colord435i = None#d435i图像
         self.depthd435i = None#d435i深度图
-        
+        self.d4_obj = Aim2Object()
+        #usb镜头的初始化以及消息格式
         self.usb = cv2.VideoCapture('/dev/usb')
+        self.usb_obj = Aim2Object()
         self.yolov10 = YOLOv10("/home/yyh/ros2_ws/src/yyh_object/yyh_object/best.pt")
 
 
@@ -81,36 +86,51 @@ class ImageSubscriber(Node):
         #------------------------------------------------------------#
         #  ts:0 tid:0  ============>yolo推理
         #------------------------------------------------------------#
-        if param.task_state == 0:
-            if self.param.task_state == 0 :
-                aim = None
-                
-                if self.yolo_cnt%4==0:
+        if self.param.task_state == 0:
+            if self.param.task_id == 0 :
+                if self.yolo_cnt%4==0:#每四帧执行一次yolo推理
+                    aim_d4 = None
+                    aim_usb = None
                     if ifarrive==0:
-                        aim = yolo_d4(param,self.yolov10)
-                    else:
-                        aim = yolo_usb(param,self.yolov10)
-                self.yolo_cnt+=1
+                        aim_d4 = yolo_d4(param,self.yolov10)
+                    else:#飞到目标位置后用下视镜头识别
+                        aim_usb = yolo_usb(param,self.yolov10)
+                self.yolo_cnt+=1#用于控制yolo的计数
             #------------------------------------------------------------#
             #  ts:1  ============>二维码识别
             #------------------------------------------------------------#    
-            elif self.param.task_state == 1:
+            elif self.param.task_id == 1:
                 aim = Code2D(param)
-
-        if aim is not None:
+        #------------------------------------------------------------#
+        #  发布aim消息
+        #------------------------------------------------------------#
+        """d435i"""
+        if aim_d4 is not None:
             
-            object = self.Aim2Object(aim)
-            self.pub_d435.publish(object)
-            self.no_aim_cnt = 0
+            object_d4 = self.d4_obj.Update(aim_d4)
+            self.pub_d435.publish(object_d4)
+            self.no_aim_cnt_d4 = 0
         else:
             
-            self.no_aim_cnt += 1
-            if self.no_aim_cnt >=5:
-                #self.get_logger().info("no aim") 
-                object  =self.Noaim2Object()
-                self.pub_d435.publish(object)
-            else:
-                pass
+            self.no_aim_cnt_d4 += 1
+            object_d4 = self.d4_obj.object
+            if self.no_aim_cnt_d4 >=5:
+                object_d4  =self.d4_obj.Clear
+            self.pub_d435.publish(object_d4)
+        """usb"""
+        if aim_usb is not None:
+            
+            object_usb = self.usb_obj.Update(aim_usb)
+            self.pub_usb.publish(object_usb)
+            self.no_aim_cnt_usb = 0
+        else:
+            
+            self.no_aim_cnt_usb += 1
+            object_usb = self.usb_obj.object
+            if self.no_aim_cnt_usb >=5:
+                object_usb  =self.d4_obj.Clear
+            self.pub_usb.publish(object_usb)
+            
     def __del__(self):
         cv2.destroyAllWindows() 
                 
@@ -121,28 +141,37 @@ class ImageSubscriber(Node):
         self.task_id = msg.id
         self.task_state = msg.state
         self.D435i_yaw = msg.yaw
-        self.param.update_param(self.ifarrive,self.task_state,self.task_id,self.D435i_yaw)
+        self.z = msg.z
+        self.param.update_param(self.ifarrive,self.task_state,self.task_id,self.D435i_yaw,self.z)
 
-    def Aim2Object(self,aim):
-        object = ObjectPosition()
-        object.x = aim.x
-        object.y = aim.y
-        object.z = aim.z
-        object.f = aim.f
-        object.kind = aim.kind
-        return object
+#-----------------------------------------------------------------------------#
+#       发布镜头消息类
+#-----------------------------------------------------------------------------#
+class Aim2Object():
 
-    def Noaim2Object(self):
-        object = ObjectPosition()
-        object.x = 0
-        object.y = 0
-        object.z = 0
-        object.f = 0
-        object.kind = 0
-        return object
+    def __init__(self):
+        self.object = ObjectPosition()
+
+    def Update(self,aim):
+        self.object.x = aim.x
+        self.object.y = aim.y
+        self.object.z = aim.z
+        self.object.f = aim.f
+        self.object.kind = aim.kind
+        return self.object
+    
+    def Clear(self):
+        self.object.x = 0
+        self.object.y = 0
+        self.object.z = 0
+        self.object.f = 0
+        self.object.kind = 0
+        return self.object
 
 
-#当做参数传递
+#-----------------------------------------------------------------------------#
+#       参数类
+#-----------------------------------------------------------------------------#
 class Param():
     def __init__(self,logger):
         self.ifarrive = 0
@@ -156,12 +185,12 @@ class Param():
         self.usb =None
 
 
-    def update_param(self,ifarrive,task_state,task_id,D435i_yaw):
+    def update_param(self,ifarrive,task_state,task_id,D435i_yaw,z):
         self.ifarrive = ifarrive
         self.task_state = task_state
         self.task_id = task_id
         self.D435i_yaw = D435i_yaw
-          
+        self.z = z
 
 
 

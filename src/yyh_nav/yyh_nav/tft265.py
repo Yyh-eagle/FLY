@@ -48,6 +48,7 @@ class SubscriberNode(Node):
         msg.id = self.serial.task_id_int
         msg.state = self.serial.task_state_int
         msg.yaw = self.serial.d435_yaw_float
+        msg.z = self.serial.T265_z_f#todo 检验这个消息格式对不对
         self.pub.publish(msg)#发布控制消息
 
     #D435i回调函数
