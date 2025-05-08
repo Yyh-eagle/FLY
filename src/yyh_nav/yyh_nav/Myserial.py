@@ -76,7 +76,7 @@ class SerialPort():
         self.c_aim_i = 0#小相机检测目标类别
         self.T265_x_f = 0
         self.T265_y_f = 0
-        self.T265_z_f = 0
+        self.T265_z_f = 0.0
         self.d435_x_f = 0
         self.d435_y_f = 0
         self.d435_z_f = 0#12

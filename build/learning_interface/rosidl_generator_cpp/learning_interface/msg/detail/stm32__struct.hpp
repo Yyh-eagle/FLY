@@ -41,6 +41,7 @@ struct STM32_
       this->id = 0l;
       this->state = 0l;
       this->yaw = 0.0f;
+      this->z = 0.0f;
     }
   }
 
@@ -54,6 +55,7 @@ struct STM32_
       this->id = 0l;
       this->state = 0l;
       this->yaw = 0.0f;
+      this->z = 0.0f;
     }
   }
 
@@ -70,6 +72,9 @@ struct STM32_
   using _yaw_type =
     float;
   _yaw_type yaw;
+  using _z_type =
+    float;
+  _z_type z;
 
   // setters for named parameter idiom
   Type & set__ifarrive(
@@ -94,6 +99,12 @@ struct STM32_
     const float & _arg)
   {
     this->yaw = _arg;
+    return *this;
+  }
+  Type & set__z(
+    const float & _arg)
+  {
+    this->z = _arg;
     return *this;
   }
 
@@ -149,6 +160,9 @@ struct STM32_
       return false;
     }
     if (this->yaw != other.yaw) {
+      return false;
+    }
+    if (this->z != other.z) {
       return false;
     }
     return true;

@@ -47,10 +47,16 @@ class ImageSubscriber(Node):
         #d435i镜头的初始化以及消息格式
         self.colord435i = None#d435i图像
         self.depthd435i = None#d435i深度图
+        self.aim_d4 = None
         self.d4_obj = Aim2Object()
         #usb镜头的初始化以及消息格式
-        self.usb = cv2.VideoCapture('/dev/usb')
+        self.usb = cv2.VideoCapture(0)
+        if not self.usb.isOpened():
+            print("无法打开摄像头")
+            exit()
+        self.aim_usb =None
         self.usb_obj = Aim2Object()
+        #yolo
         self.yolov10 = YOLOv10("/home/yyh/ros2_ws/src/yyh_object/yyh_object/best.pt")
 
 
@@ -70,12 +76,13 @@ class ImageSubscriber(Node):
         """同步处理2种数据"""
         self.param.d435i_color = self.cv_bridge.imgmsg_to_cv2(color_msg, 'bgr8')
         self.param.d435i_depth = self.cv_bridge.imgmsg_to_cv2(depth_msg, '16UC1')
-        ret, self.param.usb = self.usb.read()
+        _, self.param.usb = self.usb.read()
+       # self.get_logger().info(f"{self.param.usb}")
         #任务规划核心函数
-        #self.task_plan(self.param)
-   
+        self.task_plan(self.param)
+
         cv2.imshow("D435i", self.param.d435i_color)
-        #cv2.imshow("USB",self.param.usb)
+        cv2.imshow("USB",self.param.usb)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             return
     #-----------------------------------------------------------------------------#
@@ -86,15 +93,18 @@ class ImageSubscriber(Node):
         #------------------------------------------------------------#
         #  ts:0 tid:0  ============>yolo推理
         #------------------------------------------------------------#
+     
         if self.param.task_state == 0:
             if self.param.task_id == 0 :
                 if self.yolo_cnt%4==0:#每四帧执行一次yolo推理
-                    aim_d4 = None
-                    aim_usb = None
-                    if ifarrive==0:
-                        aim_d4 = yolo_d4(param,self.yolov10)
+                    self.aim_d4 = None
+                    self.aim_usb = None
+                    if param.ifarrive==1:
+                        
+                        self.aim_d4 = yolo_d4(param,self.yolov10)
+                        #self.get_logger().info(f"{aim_d4}")
                     else:#飞到目标位置后用下视镜头识别
-                        aim_usb = yolo_usb(param,self.yolov10)
+                        self.aim_usb = yolo_usb(param,self.yolov10)
                 self.yolo_cnt+=1#用于控制yolo的计数
             #------------------------------------------------------------#
             #  ts:1  ============>二维码识别
@@ -105,32 +115,38 @@ class ImageSubscriber(Node):
         #  发布aim消息
         #------------------------------------------------------------#
         """d435i"""
-        if aim_d4 is not None:
+        
+        if self.aim_d4 is not None:
             
-            object_d4 = self.d4_obj.Update(aim_d4)
+            object_d4 = self.d4_obj.Update(self.aim_d4)
+            
             self.pub_d435.publish(object_d4)
             self.no_aim_cnt_d4 = 0
         else:
             
             self.no_aim_cnt_d4 += 1
             object_d4 = self.d4_obj.object
-            if self.no_aim_cnt_d4 >=5:
-                object_d4  =self.d4_obj.Clear
+            if self.no_aim_cnt_d4 >=10:
+                object_d4  =self.d4_obj.Clear()
+                
             self.pub_d435.publish(object_d4)
+        if self.aim_d4 is not None:
+            cv2.putText(self.param.d435i_color, f"x :{self.aim_d4.x/10}, y: {self.aim_d4.y/10}, z: {self.aim_d4.z/10}, kind:{self.aim_d4.kind}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         """usb"""
-        if aim_usb is not None:
+        if self.aim_usb is not None:
             
-            object_usb = self.usb_obj.Update(aim_usb)
+            object_usb = self.usb_obj.Update(self.aim_usb)
             self.pub_usb.publish(object_usb)
             self.no_aim_cnt_usb = 0
         else:
             
             self.no_aim_cnt_usb += 1
             object_usb = self.usb_obj.object
-            if self.no_aim_cnt_usb >=5:
-                object_usb  =self.d4_obj.Clear
-            self.pub_usb.publish(object_usb)
-            
+            if self.no_aim_cnt_usb >=10:
+                object_usb  =self.d4_obj.Clear()        
+                self.pub_usb.publish(object_usb)
+        if self.aim_usb is not None:
+            cv2.putText(self.param.usb, f" x:{self.aim_usb.x/10}, y: {self.aim_usb.y/10}, z: {self.aim_usb.z/10}, kind: {self.aim_usb.kind}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)    
     def __del__(self):
         cv2.destroyAllWindows() 
                 

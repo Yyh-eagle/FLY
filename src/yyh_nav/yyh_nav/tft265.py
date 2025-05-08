@@ -38,7 +38,7 @@ class SubscriberNode(Node):
 
     def timer_serial_callback(self):#100帧发送串口数据
         self.serial.Send_message()
-        #self.get_logger().info(f"Data: {self.serial.data_num}")
+        self.get_logger().info(f"Data: {self.serial.data_num}")
 
     def timer_callback(self):#10帧，为了
         self.serial.receive()#定时器接受数据
@@ -75,9 +75,12 @@ class SubscriberNode(Node):
         self.serial.d435_z_f = z_w
     #USB相机回调函数    
     def listener_callback_usb(self,msg):
-        self.usb_x=msg.x
-        self.usb_y=msg.y
-        self.flag_u=msg.f
+
+        
+        self.serial.c_flag_u = msg.f#小相机是否检测到目标
+        self.serial.c_aim_i = msg.kind#小相机检测目标类别
+        self.serial.c_x_f = msg.x/10#小相机的cm目标
+        self.serial.c_y_f = msg.y/10
       
     #T265的回调函数
     def T2_listener_callback(self,msg):                                             # 创建回调函数，执行收到话题消息后对数据的处理

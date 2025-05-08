@@ -31,7 +31,7 @@ void STM32__rosidl_typesupport_introspection_c__STM32_fini_function(void * messa
   learning_interface__msg__STM32__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember STM32__rosidl_typesupport_introspection_c__STM32_message_member_array[4] = {
+static rosidl_typesupport_introspection_c__MessageMember STM32__rosidl_typesupport_introspection_c__STM32_message_member_array[5] = {
   {
     "ifarrive",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -91,13 +91,28 @@ static rosidl_typesupport_introspection_c__MessageMember STM32__rosidl_typesuppo
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "z",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(learning_interface__msg__STM32, z),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers STM32__rosidl_typesupport_introspection_c__STM32_message_members = {
   "learning_interface__msg",  // message namespace
   "STM32",  // message name
-  4,  // number of fields
+  5,  // number of fields
   sizeof(learning_interface__msg__STM32),
   STM32__rosidl_typesupport_introspection_c__STM32_message_member_array,  // message members
   STM32__rosidl_typesupport_introspection_c__STM32_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -86,6 +86,15 @@ bool learning_interface__msg__stm32__convert_from_py(PyObject * _pymsg, void * _
     ros_message->yaw = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // z
+    PyObject * field = PyObject_GetAttrString(_pymsg, "z");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->z = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -146,6 +155,17 @@ PyObject * learning_interface__msg__stm32__convert_to_py(void * raw_ros_message)
     field = PyFloat_FromDouble(ros_message->yaw);
     {
       int rc = PyObject_SetAttrString(_pymessage, "yaw", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // z
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->z);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "z", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

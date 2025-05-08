@@ -21,6 +21,7 @@ learning_interface__msg__STM32__init(learning_interface__msg__STM32 * msg)
   // id
   // state
   // yaw
+  // z
   return true;
 }
 
@@ -34,6 +35,7 @@ learning_interface__msg__STM32__fini(learning_interface__msg__STM32 * msg)
   // id
   // state
   // yaw
+  // z
 }
 
 bool
@@ -58,6 +60,10 @@ learning_interface__msg__STM32__are_equal(const learning_interface__msg__STM32 *
   if (lhs->yaw != rhs->yaw) {
     return false;
   }
+  // z
+  if (lhs->z != rhs->z) {
+    return false;
+  }
   return true;
 }
 
@@ -77,6 +83,8 @@ learning_interface__msg__STM32__copy(
   output->state = input->state;
   // yaw
   output->yaw = input->yaw;
+  // z
+  output->z = input->z;
   return true;
 }
 

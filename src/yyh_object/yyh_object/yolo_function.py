@@ -4,7 +4,7 @@ import numpy as np
 
 import pyrealsense2 as rs2#python内置的d435i库
 from learning_interface.msg import ObjectPosition
-from Coord_Trans import locate_d4
+from Coord_Trans import *
 YOLO_THRESHOLD = 0.5
 """本文件用于yolo的接口函数"""
 
@@ -17,7 +17,7 @@ def yolo_d4(param,yolo):
     """d435i的yolo函数"""
     d435i_color = param.d435i_color
     result=yolo_recog_V10(d435i_color,YOLO_THRESHOLD,yolo)
-
+    
     if result is None:
         return None
 
@@ -26,7 +26,7 @@ def yolo_d4(param,yolo):
 def yolo_usb(param,yolo):#todo测试usb相机是否可用yolo
     """usb的yolo函数"""
     usb = param.usb
-    result=yolo_recog_V10(param,YOLO_THRESHOLD,yolo)
+    result=yolo_recog_V10(usb,YOLO_THRESHOLD,yolo)
 
     if result is None:
         return None
@@ -53,9 +53,9 @@ def yolo_recog_V10(frame, threshold, yolo):
        
         name = result.names[int(box.cls)]
         class_id = class_dict.get(name, -1)  # 获取类别ID，默认为-1表示未找到
-        # 跳过未识别的类别
-        if class_id == -1:
-            continue 
+        # # 跳过未识别的类别
+        # if class_id == -1:
+        #     continue 
 
         conf = float(box.conf)
         #if name == "landing_cross" and conf > threshold:#todo需要根据比赛具体细化
@@ -72,7 +72,7 @@ def yolo_recog_V10(frame, threshold, yolo):
             center_y = (y1_orig + y2_orig) // 2
             
             cv2.rectangle( 
-                param.d435i_color, 
+                frame, 
                 (x1_orig, y1_orig), 
                 (x2_orig, y2_orig), 
                 (0, 255, 0), 2

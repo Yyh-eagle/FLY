@@ -55,15 +55,9 @@ def GetD435iObject(object,rate,param):
     R = np.array([[np.cos(yaw), np.sin(yaw)],
                 [-np.sin(yaw), np.cos(yaw)]])
     X_trans = np.dot(R, X0)
-    #param.logger.info(str(X0))
-    real_x_int,real_y_int,real_z_int = -int(X_trans[1])-337,int(real_x),-int(X_trans[0])#todo需要测量两个镜头之间的距离
-    cv2.putText(param.d435i_color,
-                "(" + str(real_x_int) + "," + str(real_y_int) + "," + str(real_z_int) + ")",
-                (center_x_int, center_y_int),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                0.75,
-                (0, 255, 0),
-                2)
+    
+    real_x_int,real_y_int,real_z_int = -int(X_trans[1])-374,int(real_x),-int(X_trans[0])
+  
 
     return real_x_int,real_y_int,real_z_int
   
@@ -74,15 +68,15 @@ def GetD435iObject(object,rate,param):
 #------------------------------------------------------------#
 
 def locate_usb(param,result):
-    """参数含义：real_z:usb相机所在高度"""#todo需要tfT265节点发布高度，并减去飞机厚度
+    """参数含义：real_z:usb相机所在高度"""
 
     
     center_x,center_y,kind_order = result[0],result[1],result[7]
-    real_x,real_y,real_z = pixel_to_camera_coordinate(center_x,center_y,param.z,\
+    real_x,real_y,real_z = pixel_to_camera_coordinate(center_x,center_y,param.z*10-43,\
                             fx =608.034 , fy=607.711, cx=430, cy=251.383)
     
     aim = Aim()#创建一个通信格式
-    aim.update(real_x,real_y,real_z,1,kind_order)
+    aim.update(int(real_x),int(real_y),int(real_z),1,kind_order)
     return aim
 
 
@@ -90,7 +84,7 @@ def locate_usb(param,result):
 #  小孔成像
 #------------------------------------------------------------#
 #todo需要对D435i的像素进行固定,固定为848,480
-def pixel_to_camera_coordinate(px, py,real_z ,fx =608.034 , fy=607.711, cx=430, cy=251.383):#todo需要对相机进行标定
+def pixel_to_camera_coordinate(px, py,real_z ,fx =320 , fy=240, cx=430, cy=251.383):#todo需要对相机进行标定
     
     # 小孔成像模型计算
     real_x = (px - cx) * real_z / fx

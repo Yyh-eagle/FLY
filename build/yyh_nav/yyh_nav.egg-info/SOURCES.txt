@@ -8,10 +8,13 @@ launch/tf_launch.py
 prefix_override/sitecustomize.py
 prefix_override/__pycache__/sitecustomize.cpython-38.pyc
 resource/yyh_nav
+share/yyh_nav/hook/pythonpath_develop.dsv
+share/yyh_nav/hook/pythonpath_develop.ps1
+share/yyh_nav/hook/pythonpath_develop.sh
+yyh_nav/GUI.py
 yyh_nav/Myserial.py
 yyh_nav/__init__.py
 yyh_nav/data_vision.py
-yyh_nav/getserial.py
 yyh_nav/t265_pose_test.py
 yyh_nav/tft265.py
 yyh_nav.egg-info/PKG-INFO
@@ -21,3 +24,8 @@ yyh_nav.egg-info/entry_points.txt
 yyh_nav.egg-info/requires.txt
 yyh_nav.egg-info/top_level.txt
 yyh_nav.egg-info/zip-safe
+yyh_nav/__pycache__/GUI.cpython-38.pyc
+yyh_nav/__pycache__/Myserial.cpython-38.pyc
+yyh_nav/__pycache__/__init__.cpython-38.pyc
+yyh_nav/__pycache__/data_vision.cpython-38.pyc
+yyh_nav/__pycache__/tft265.cpython-38.pyc

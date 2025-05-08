@@ -20,16 +20,32 @@ namespace msg
 namespace builder
 {
 
+class Init_STM32_z
+{
+public:
+  explicit Init_STM32_z(::learning_interface::msg::STM32 & msg)
+  : msg_(msg)
+  {}
+  ::learning_interface::msg::STM32 z(::learning_interface::msg::STM32::_z_type arg)
+  {
+    msg_.z = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::learning_interface::msg::STM32 msg_;
+};
+
 class Init_STM32_yaw
 {
 public:
   explicit Init_STM32_yaw(::learning_interface::msg::STM32 & msg)
   : msg_(msg)
   {}
-  ::learning_interface::msg::STM32 yaw(::learning_interface::msg::STM32::_yaw_type arg)
+  Init_STM32_z yaw(::learning_interface::msg::STM32::_yaw_type arg)
   {
     msg_.yaw = std::move(arg);
-    return std::move(msg_);
+    return Init_STM32_z(msg_);
   }
 
 private:

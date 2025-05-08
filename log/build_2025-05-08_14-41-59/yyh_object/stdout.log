@@ -1,0 +1,14 @@
+running develop
+running egg_info
+writing yyh_object.egg-info/PKG-INFO
+writing dependency_links to yyh_object.egg-info/dependency_links.txt
+writing entry points to yyh_object.egg-info/entry_points.txt
+writing requirements to yyh_object.egg-info/requires.txt
+writing top-level names to yyh_object.egg-info/top_level.txt
+writing manifest file 'yyh_object.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yyh/ros2_ws/install/yyh_object/lib/python3.8/site-packages/yyh-object.egg-link (link to .)
+Installing image script to /home/yyh/ros2_ws/install/yyh_object/lib/yyh_object
+
+Installed /home/yyh/ros2_ws/build/yyh_object
+running symlink_data

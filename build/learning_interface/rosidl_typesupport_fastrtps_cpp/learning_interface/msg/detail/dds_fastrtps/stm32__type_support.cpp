@@ -40,6 +40,8 @@ cdr_serialize(
   cdr << ros_message.state;
   // Member: yaw
   cdr << ros_message.yaw;
+  // Member: z
+  cdr << ros_message.z;
   return true;
 }
 
@@ -60,6 +62,9 @@ cdr_deserialize(
 
   // Member: yaw
   cdr >> ros_message.yaw;
+
+  // Member: z
+  cdr >> ros_message.z;
 
   return true;
 }
@@ -98,6 +103,12 @@ get_serialized_size(
   // Member: yaw
   {
     size_t item_size = sizeof(ros_message.yaw);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: z
+  {
+    size_t item_size = sizeof(ros_message.z);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -145,6 +156,14 @@ max_serialized_size_STM32(
   }
 
   // Member: yaw
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: z
   {
     size_t array_size = 1;
 

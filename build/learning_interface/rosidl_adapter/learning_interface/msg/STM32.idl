@@ -21,6 +21,8 @@ module learning_interface {
       @verbatim (language="comment", text=
         " 表示D435i的角度")
       float yaw;
+
+      float z;
     };
   };
 };

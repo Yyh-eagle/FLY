@@ -57,6 +57,7 @@ class STM32(metaclass=Metaclass_STM32):
         '_id',
         '_state',
         '_yaw',
+        '_z',
     ]
 
     _fields_and_field_types = {
@@ -64,12 +65,14 @@ class STM32(metaclass=Metaclass_STM32):
         'id': 'int32',
         'state': 'int32',
         'yaw': 'float',
+        'z': 'float',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
@@ -81,6 +84,7 @@ class STM32(metaclass=Metaclass_STM32):
         self.id = kwargs.get('id', int())
         self.state = kwargs.get('state', int())
         self.yaw = kwargs.get('yaw', float())
+        self.z = kwargs.get('z', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -118,6 +122,8 @@ class STM32(metaclass=Metaclass_STM32):
         if self.state != other.state:
             return False
         if self.yaw != other.yaw:
+            return False
+        if self.z != other.z:
             return False
         return True
 
@@ -183,3 +189,16 @@ class STM32(metaclass=Metaclass_STM32):
                 isinstance(value, float), \
                 "The 'yaw' field must be of type 'float'"
         self._yaw = value
+
+    @property
+    def z(self):
+        """Message field 'z'."""
+        return self._z
+
+    @z.setter
+    def z(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'z' field must be of type 'float'"
+        self._z = value

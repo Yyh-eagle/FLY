@@ -24,6 +24,7 @@ typedef struct learning_interface__msg__STM32
   int32_t id;
   int32_t state;
   float yaw;
+  float z;
 } learning_interface__msg__STM32;
 
 // Struct for a sequence of learning_interface__msg__STM32.

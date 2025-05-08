@@ -1,7 +1,7 @@
 import cv2
 
 # 打开摄像头
-cap = cv2.VideoCapture('/dev/usb')
+cap = cv2.VideoCapture(0)
 
 # 检查摄像头是否成功打开
 if not cap.isOpened():
