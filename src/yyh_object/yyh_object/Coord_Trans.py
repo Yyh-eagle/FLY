@@ -84,7 +84,7 @@ def locate_usb(param,result):
 #  小孔成像
 #------------------------------------------------------------#
 #todo需要对D435i的像素进行固定,固定为848,480
-def pixel_to_camera_coordinate(px, py,real_z ,fx =320 , fy=240, cx=430, cy=251.383):#todo需要对相机进行标定
+def pixel_to_camera_coordinate(px, py,real_z ,fx =445 , fy=446, cx=304, cy=231):#todo需要对相机进行标定
     
     # 小孔成像模型计算
     real_x = (px - cx) * real_z / fx

@@ -1,0 +1,8 @@
+# data.yaml
+train: /home/yyh/deeplearning/yolov10/yolov10/dataset/images/train
+val: /home/yyh/deeplearning/yolov10/yolov10/dataset/images/val
+
+# 类别数量
+nc: 1
+# 类别名称
+names: ['land']
