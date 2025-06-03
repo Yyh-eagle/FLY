@@ -50,7 +50,7 @@ class ImageSubscriber(Node):
         self.aim_d4 = None
         self.d4_obj = Aim2Object()
         #usb镜头的初始化以及消息格式
-        self.usb = cv2.VideoCapture(0)
+        self.usb = cv2.VideoCapture(6)
         if not self.usb.isOpened():
             print("无法打开摄像头")
             exit()
@@ -80,7 +80,7 @@ class ImageSubscriber(Node):
        # self.get_logger().info(f"{self.param.usb}")
         #任务规划核心函数
         self.task_plan(self.param)
-
+        #self._logger.info("in")
         cv2.imshow("D435i", self.param.d435i_color)
         cv2.imshow("USB",self.param.usb)
         if cv2.waitKey(1) & 0xFF == ord('q'):

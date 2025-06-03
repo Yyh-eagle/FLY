@@ -73,10 +73,10 @@ def locate_usb(param,result):
     
     center_x,center_y,kind_order = result[0],result[1],result[7]
     real_x,real_y,real_z = pixel_to_camera_coordinate(center_x,center_y,param.z*10-43,\
-                            fx =608.034 , fy=607.711, cx=430, cy=251.383)
-    
+                            fx =445 , fy=446, cx=304, cy=231)
+    #param.logger.info("usb_x:{},usb_y:{},usb_z:{}".format(real_x,real_y,param.z*10))
     aim = Aim()#创建一个通信格式
-    aim.update(int(real_x),int(real_y),int(real_z),1,kind_order)
+    aim.update(int(real_x),int(-real_y),int(real_z),1,kind_order)
     return aim
 
 
