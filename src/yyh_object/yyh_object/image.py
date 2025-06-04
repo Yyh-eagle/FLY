@@ -50,7 +50,7 @@ class ImageSubscriber(Node):
         self.aim_d4 = None
         self.d4_obj = Aim2Object()
         #usb镜头的初始化以及消息格式
-        self.usb = cv2.VideoCapture(6)
+        self.usb = cv2.VideoCapture('/dev/usb')
         if not self.usb.isOpened():
             print("无法打开摄像头")
             exit()
