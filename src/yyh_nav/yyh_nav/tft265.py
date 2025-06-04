@@ -38,7 +38,18 @@ class SubscriberNode(Node):
 
     def timer_serial_callback(self):#100帧发送串口数据
         self.serial.Send_message()
-        self.get_logger().info(f"Data: {self.serial.data_num}")
+        # 分类打印设备状态信息
+        self.get_logger().info(f"T265状态: {'工作' if self.serial.t_flag_u else '未工作'}")
+        self.get_logger().info(f"T265坐标(cm): X={self.serial.T265_x_f:.1f}, Y={self.serial.T265_y_f:.1f}, Z={self.serial.T265_z_f:.1f}")
+
+        self.get_logger().info(f"D435i状态: {'检测到目标' if self.serial.d_flag_u else '未检测到目标'}, 目标类型: {self.serial.d435_aim_i}")
+        if self.serial.d_flag_u:
+            self.get_logger().info(f"D435i目标坐标(cm): X={self.serial.d435_x_f:.1f}, Y={self.serial.d435_y_f:.1f}, Z={self.serial.d435_z_f:.1f}")
+        self.get_logger().info(f"USB相机状态: {'检测到目标' if self.serial.c_flag_u else '未检测到目标'}, 目标类型: {self.serial.c_aim_i}")
+        # 打印坐标信息（单位cm，保留1位小数）
+        if self.serial.c_flag_u:
+            self.get_logger().info(f"USB相机目标坐标(cm): X={self.serial.c_x_f:.1f}, Y={self.serial.c_y_f:.1f}")
+   
 
     def timer_callback(self):#10帧，为了
         self.serial.receive()#定时器接受数据
