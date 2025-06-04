@@ -79,9 +79,17 @@ class SubscriberNode(Node):
         
         self.serial.c_flag_u = msg.f#小相机是否检测到目标
         self.serial.c_aim_i = msg.kind#小相机检测目标类别
-        self.serial.c_x_f = msg.x/10#小相机的cm目标
-        self.serial.c_y_f = msg.y/10
-      
+        x = msg.x/10#小相机的cm目标
+        y = msg.y/10
+        self.process_USB(x,y)#处理USB相机数据
+
+    
+    def process_USB(self,x,y):
+        theta = self.euler
+        self.serial.c_x_f = x*np.cos(theta) - y*np.sin(theta)
+        self.serial.c_y_f = x*np.sin(theta) + y*np.cos(theta)
+
+          
     #T265的回调函数
     def T2_listener_callback(self,msg):                                             # 创建回调函数，执行收到话题消息后对数据的处理
         for transform in msg.transforms:
