@@ -45,7 +45,7 @@ class SubscriberNode(Node):
         #self.get_logger().info(f"D435i状态: {'检测到目标' if self.serial.d_flag_u else '未检测到目标'}, 目标类型: {self.serial.d435_aim_i}")
         #if self.serial.d_flag_u:
         #    self.get_logger().info(f"D435i目标坐标(cm): X={self.serial.d435_x_f:.1f}, Y={self.serial.d435_y_f:.1f}, Z={self.serial.d435_z_f:.1f}")
-        self.get_logger().info(f"USB相机状态: {'检测到目标' if self.serial.c_flag_u else '未检测到目标'}, 目标类型: {self.serial.c_aim_i}")
+        #self.get_logger().info(f"USB相机状态: {'检测到目标' if self.serial.c_flag_u else '未检测到目标'}, 目标类型: {self.serial.c_aim_i}")
         # 打印坐标信息（单位cm，保留1位小数）
         if self.serial.c_flag_u:
             self.get_logger().info(f"USB相机目标坐标(cm): X={self.serial.c_x_f:.1f}, Y={self.serial.c_y_f:.1f}")
@@ -97,8 +97,8 @@ class SubscriberNode(Node):
     
     def process_USB(self,x,y):
         theta = self.euler[2]
-        self.serial.c_x_f = x*np.cos(theta) - y*np.sin(theta)
-        self.serial.c_y_f = x*np.sin(theta) + y*np.cos(theta)
+        self.serial.c_x_f = (x*np.cos(theta) - y*np.sin(theta))*1.6
+        self.serial.c_y_f = (x*np.sin(theta) + y*np.cos(theta))*1.6
         self.get_logger().info("小相机坐标(cm): X={:.1f}, Y={:.1f}".format(self.serial.c_x_f, self.serial.c_y_f))
 
           

@@ -50,7 +50,7 @@ class ImageSubscriber(Node):
         self.aim_d4 = None
         self.d4_obj = Aim2Object()
         #usb镜头的初始化以及消息格式
-        self.usb = cv2.VideoCapture('/dev/usb')
+        self.usb = cv2.VideoCapture(0)
         if not self.usb.isOpened():
             print("无法打开摄像头")
             exit()
@@ -99,7 +99,7 @@ class ImageSubscriber(Node):
                 if self.yolo_cnt%4==0:#每四帧执行一次yolo推理
                     self.aim_d4 = None
                     self.aim_usb = None
-                    if param.ifarrive==1:
+                    if param.ifarrive==0:
                         
                         self.aim_d4 = yolo_d4(param,self.yolov10)
                         #self.get_logger().info(f"{aim_d4}")
