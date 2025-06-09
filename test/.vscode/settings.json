@@ -1,0 +1,15 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/yyh/ros2_ws/build/yyh_object",
+        "/home/yyh/fly/install/yyh_object/lib/python3.8/site-packages",
+        "/home/yyh/ros2_ws/build/yyh_nav",
+        "/home/yyh/fly/install/yyh_nav/lib/python3.8/site-packages",
+        "/home/yyh/fly/install/yyh_launch/lib/python3.8/site-packages",
+        "/home/yyh/ros2_ws/build/yolov5_ros2",
+        "/home/yyh/fly/install/yolov5_ros2/lib/python3.8/site-packages",
+        "/home/yyh/fly/install/realsense2_camera_msgs/lib/python3.8/site-packages",
+        "/home/yyh/fly/install/learning_interface/lib/python3.8/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

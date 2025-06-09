@@ -5,7 +5,8 @@ import numpy as np
 import pyrealsense2 as rs2#python内置的d435i库
 from learning_interface.msg import ObjectPosition
 from Coord_Trans import *
-YOLO_THRESHOLD = 0.5
+from vino import yolo_int8
+YOLO_THRESHOLD = 0.45
 """本文件用于yolo的接口函数"""
 
 
@@ -13,21 +14,22 @@ YOLO_THRESHOLD = 0.5
 #------------------------------------------------------------#
 #  yolo和Image文件的接口
 #------------------------------------------------------------#
-def yolo_d4(param,yolo):
+def yolo_d4(param,input_layer,infer_request,model):
     """d435i的yolo函数"""
     d435i_color = param.d435i_color
-    result=yolo_recog_V10(d435i_color,YOLO_THRESHOLD,yolo)
-    
+    #result=yolo_recog_V10(d435i_color,YOLO_THRESHOLD,yolo)
+    result = yolo_int8(d435i_color,YOLO_THRESHOLD,input_layer,infer_request,model)
+    param.logger.info(str(result))
     if result is None:
         return None
 
     return locate_d4(param,result) 
 
-def yolo_usb(param,yolo):#todo测试usb相机是否可用yolo
+def yolo_usb(param,input_layer,infer_request,model):#todo测试usb相机是否可用yolo
     """usb的yolo函数"""
     usb = param.usb
-    result=yolo_recog_V10(usb,YOLO_THRESHOLD,yolo)
-
+    #result=yolo_recog_V10(usb,YOLO_THRESHOLD,yolo)
+    result = yolo_int8(usb,YOLO_THRESHOLD,input_layer,infer_request,model)
     if result is None:
         return None
         

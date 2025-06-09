@@ -38,17 +38,18 @@ class SubscriberNode(Node):
 
     def timer_serial_callback(self):#100帧发送串口数据
         self.serial.Send_message()
+        #self.get_logger().info(f"多及角度: {self.serial.d435_yaw_float}")
         # 分类打印设备状态信息
         #self.get_logger().info(f"T265状态: {'工作' if self.serial.t_flag_u else '未工作'}")
         #self.get_logger().info(f"T265坐标(cm): X={self.serial.T265_x_f:.1f}, Y={self.serial.T265_y_f:.1f}, Z={self.serial.T265_z_f:.1f}")
 
         #self.get_logger().info(f"D435i状态: {'检测到目标' if self.serial.d_flag_u else '未检测到目标'}, 目标类型: {self.serial.d435_aim_i}")
-        #if self.serial.d_flag_u:
-        #    self.get_logger().info(f"D435i目标坐标(cm): X={self.serial.d435_x_f:.1f}, Y={self.serial.d435_y_f:.1f}, Z={self.serial.d435_z_f:.1f}")
+        if self.serial.d_flag_u:
+            self.get_logger().info(f"D435i目标坐标(cm): X={self.serial.d435_x_f:.1f}, Y={self.serial.d435_y_f:.1f}, Z={self.serial.d435_z_f:.1f}")
         #self.get_logger().info(f"USB相机状态: {'检测到目标' if self.serial.c_flag_u else '未检测到目标'}, 目标类型: {self.serial.c_aim_i}")
         # 打印坐标信息（单位cm，保留1位小数）
-        if self.serial.c_flag_u:
-            self.get_logger().info(f"USB相机目标坐标(cm): X={self.serial.c_x_f:.1f}, Y={self.serial.c_y_f:.1f}")
+        # if self.serial.c_flag_u:
+        #     self.get_logger().info(f"USB相机目标坐标(cm): X={self.serial.c_x_f:.1f}, Y={self.serial.c_y_f:.1f}")
    
 
     def timer_callback(self):#10帧，为了
@@ -81,8 +82,8 @@ class SubscriberNode(Node):
         y_w = self.d435_x*sin_yaw + self.d435_y*cos_yaw + self.t2y*100
         z_w = self.d435_z+self.t2z*100
         #self.get_logger().info("最终得到的坐标:[%d, %d, %d]cm" % (x_w, y_w,z_w))
-        self.serial.d435_x_f = x_w
-        self.serial.d435_y_f = y_w
+        self.serial.d435_x_f = -y_w
+        self.serial.d435_y_f = x_w
         self.serial.d435_z_f = z_w
     #USB相机回调函数    
     def listener_callback_usb(self,msg):
@@ -97,9 +98,9 @@ class SubscriberNode(Node):
     
     def process_USB(self,x,y):
         theta = self.euler[2]
-        self.serial.c_x_f = (x*np.cos(theta) - y*np.sin(theta))*1.6
-        self.serial.c_y_f = (x*np.sin(theta) + y*np.cos(theta))*1.6
-        self.get_logger().info("小相机坐标(cm): X={:.1f}, Y={:.1f}".format(self.serial.c_x_f, self.serial.c_y_f))
+        self.serial.c_x_f = (x*np.cos(theta) - y*np.sin(theta))*1.5
+        self.serial.c_y_f = (x*np.sin(theta) + y*np.cos(theta))*1.5
+        #self.get_logger().info("小相机坐标(cm): X={:.1f}, Y={:.1f}".format(self.serial.c_x_f, self.serial.c_y_f))
 
           
     #T265的回调函数

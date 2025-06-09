@@ -39,8 +39,8 @@ def locate_d4(param,result):
 
 def GetD435iObject(object,rate,param):
    
-    #yaw = param.D435i_yaw#舵机转角#todo需要刘华强给我传数据
-    yaw = 45/57.3
+    yaw = param.D435i_yaw/57.3#舵机转角
+    #param.logger.info(str(yaw))
     center_x_int=int(rate*object[0])#中心点坐标
     center_y_int=int(rate*object[1])
     real_z=param.d435i_depth[center_y_int,center_x_int]#目标深度值获取
@@ -49,7 +49,7 @@ def GetD435iObject(object,rate,param):
     camera_coordinate = pixel_to_camera_coordinate(center_x_int,center_y_int,real_z,\
                                         fx =608.034 , fy=607.711, cx=430, cy=251.383)#小孔成像模型计算
     (real_x,real_y,real_z) = camera_coordinate[0:3]#小孔成像模型计算
-   
+    #param.logger.info("d435i_x:{},d435i_y:{},d435i_z:{}".format(real_x,real_y,real_z))
     
     X0 = np.array([real_y, real_z])
     R = np.array([[np.cos(yaw), np.sin(yaw)],

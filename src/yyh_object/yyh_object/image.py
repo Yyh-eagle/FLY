@@ -26,6 +26,7 @@ from yolo_function import *
 from circle import *
 from ultralytics import YOLOv10
 from Code2D import Code2D
+from vino import Init_ie
 """
 所有的功能函数采用同样的返回值格式，[center_x,center_y,x,y,w,confidence,kind]
 该格式传入locate_d4函数，返回aim
@@ -50,15 +51,15 @@ class ImageSubscriber(Node):
         self.aim_d4 = None
         self.d4_obj = Aim2Object()
         #usb镜头的初始化以及消息格式
-        self.usb = cv2.VideoCapture(0)
+        self.usb = cv2.VideoCapture('/dev/usb')
         if not self.usb.isOpened():
             print("无法打开摄像头")
             exit()
         self.aim_usb =None
         self.usb_obj = Aim2Object()
         #yolo
-        self.yolov10 = YOLOv10("/home/yyh/ros2_ws/src/yyh_object/yyh_object/best.pt")
-
+        #self.yolov10 = YOLOv10("/home/yyh/ros2_ws/src/yyh_object/yyh_object/best.pt")
+        self.get_ie()#启动int8初始化
 
         self.sub_stm = self.create_subscription(STM32, "/stm_info", self.listener_callback_stm, 10)
         color_sub = Subscriber(self, Image, '/D435i/color/image_raw')
@@ -71,6 +72,10 @@ class ImageSubscriber(Node):
         self.ts.registerCallback(self.unified_callback)
         self.pub_d435 = self.create_publisher(ObjectPosition, "d435_object_position", 10)             
         self.pub_usb = self.create_publisher(ObjectPosition, "usb_object_position", 10) 
+    def get_ie(self):
+        self.input_layer, self.infer_request,self.model = Init_ie()
+        
+
 
     def unified_callback(self, color_msg, depth_msg):
         """同步处理2种数据"""
@@ -96,15 +101,15 @@ class ImageSubscriber(Node):
      
         if self.param.task_state == 0:
             if self.param.task_id == 0 :
-                if self.yolo_cnt%4==0:#每四帧执行一次yolo推理
+                if self.yolo_cnt%1==0:#每四帧执行一次yolo推理
                     self.aim_d4 = None
                     self.aim_usb = None
                     if param.ifarrive==0:
                         
-                        self.aim_d4 = yolo_d4(param,self.yolov10)
+                        self.aim_d4 = yolo_d4(param,self.input_layer,self.infer_request,self.model)
                         #self.get_logger().info(f"{aim_d4}")
                     else:#飞到目标位置后用下视镜头识别
-                        self.aim_usb = yolo_usb(param,self.yolov10)
+                        self.aim_usb = yolo_usb(param,self.input_layer,self.infer_request,self.model)
                 self.yolo_cnt+=1#用于控制yolo的计数
             #------------------------------------------------------------#
             #  ts:1  ============>二维码识别
@@ -130,8 +135,8 @@ class ImageSubscriber(Node):
                 object_d4  =self.d4_obj.Clear()
                 
             self.pub_d435.publish(object_d4)
-        if self.aim_d4 is not None:
-            cv2.putText(self.param.d435i_color, f"x :{self.aim_d4.x/10}, y: {self.aim_d4.y/10}, z: {self.aim_d4.z/10}, kind:{self.aim_d4.kind}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+        # if self.aim_d4 is not None:
+        #     cv2.putText(self.param.d435i_color, f"x :{self.aim_d4.x/10}, y: {self.aim_d4.y/10}, z: {self.aim_d4.z/10}, kind:{self.aim_d4.kind}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         """usb"""
         if self.aim_usb is not None:
             
@@ -145,8 +150,8 @@ class ImageSubscriber(Node):
             if self.no_aim_cnt_usb >=10:
                 object_usb  =self.d4_obj.Clear()        
                 self.pub_usb.publish(object_usb)
-        if self.aim_usb is not None:
-            cv2.putText(self.param.usb, f" x:{self.aim_usb.x/10}, y: {self.aim_usb.y/10}, z: {self.aim_usb.z/10}, kind: {self.aim_usb.kind}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)    
+        # if self.aim_usb is not None:
+        #     cv2.putText(self.param.usb, f" x:{self.aim_usb.x/10}, y: {self.aim_usb.y/10}, z: {self.aim_usb.z/10}, kind: {self.aim_usb.kind}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)    
     def __del__(self):
         cv2.destroyAllWindows() 
                 
@@ -186,7 +191,7 @@ class Aim2Object():
 
 
 #-----------------------------------------------------------------------------#
-#       参数类
+#                参数类
 #-----------------------------------------------------------------------------#
 class Param():
     def __init__(self,logger):

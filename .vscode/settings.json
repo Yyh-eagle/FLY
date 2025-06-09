@@ -17,5 +17,6 @@
         "/home/yyh/ros2_ws/install/learning_interface/lib/python3.8/site-packages",
         "/opt/ros/foxy/lib/python3.8/site-packages"
     ],
-    "ros.distro": "foxy"
+    "ros.distro": "foxy",
+    "cmake.sourceDirectory": "/home/yyh/fly/src/learning_interface"
 }
